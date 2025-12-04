@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import './App.css'
+import Preloader from './components/ui/Preloader'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import AboutUsPage from './pages/AboutUsPage'
@@ -10,6 +11,10 @@ import ContactPage from './pages/ContactPage'
 function App() {
   return (
     <>
+      {/* Preloader - Easy to remove: just delete this line */}
+      <Preloader />
+
+      {/* Main Content */}
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
