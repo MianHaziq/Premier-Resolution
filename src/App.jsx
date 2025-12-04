@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import './App.css'
 import Preloader from './components/ui/Preloader'
@@ -9,15 +10,17 @@ import ServicesPage from './pages/ServicesPage'
 import ContactPage from './pages/ContactPage'
 
 function App() {
+  const [preloaderComplete, setPreloaderComplete] = useState(false);
+
   return (
     <>
       {/* Preloader - Easy to remove: just delete this line */}
-      <Preloader />
+      <Preloader onComplete={() => setPreloaderComplete(true)} />
 
       {/* Main Content */}
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home preloaderComplete={preloaderComplete} />} />
         <Route path="/about" element={<AboutUsPage />} />
         <Route path="/career" element={<CareerPage />} />
         <Route path="/services" element={<ServicesPage />} />

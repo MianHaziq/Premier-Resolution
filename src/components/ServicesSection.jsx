@@ -1,6 +1,7 @@
 // ServicesSection.jsx
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import ServiceCard from "./ui/ServiceCard";
+
 /* Inline SVG icons so copying the file works immediately */
 const IconCode = () => (
   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
@@ -89,32 +90,69 @@ const SERVICES = [
 ];
 
 export default function ServicesSection() {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <section className="w-full bg-[#FAFAFB] py-12 px-20">
-      <div className="mx-auto" >
-        {/* Header (approx matching image) */}
-        <div className="text-center mb-8">
-          <h2 className="text-[34px] leading-[40px] font-extrabold text-[#0F172A]">
-            Success, <span className="underline decoration-[#20A871] decoration-4 underline-offset-6">Powered by Premiere Resolutions</span>
+    <section ref={sectionRef} className="w-full bg-[#FAFAFB] py-16 px-6 md:px-12 lg:px-20 overflow-hidden">
+      <div className="max-w-[1440px] mx-auto">
+        {/* Header with animation */}
+        <div className="text-center mb-12">
+          <h2
+            className={`text-[28px] md:text-[34px] leading-[40px] font-extrabold text-[#0F172A] transition-all duration-700 ease-out ${
+              isVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-8"
+            }`}
+          >
+            Success,{" "}
+            <span className="relative">
+              <span className="relative z-10">Powered by Premiere Resolutions</span>
+              <span
+                className={`absolute left-0 right-0 bottom-0 h-[4px] bg-[#20A871] rounded-full transition-all duration-700 delay-500 ${
+                  isVisible ? "scale-x-100" : "scale-x-0"
+                }`}
+                style={{ transformOrigin: "left" }}
+              />
+            </span>
           </h2>
-          <p className="text-[14px] text-[#6B7280] mt-3 max-w-[720px] mx-auto">
+          <p
+            className={`text-[14px] md:text-[16px] text-[#6B7280] mt-4 max-w-[720px] mx-auto transition-all duration-700 delay-200 ease-out ${
+              isVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-8"
+            }`}
+          >
             Where advanced technology meets professional communication to create better customer outcomes.
           </p>
         </div>
 
-        {/* Grid: 3 columns on large (matches 1440 layout), 2 on md, 1 on sm */}
-        <div
-          className="
-            grid
-            lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1
-            gap-[18px]
-            justify-center
-          "
-        >
+        {/* Grid with staggered card animations */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
           {SERVICES.map((s, idx) => (
-            <div key={idx} className="flex justify-center">
-              <ServiceCard {...s} />
-            </div>
+            <ServiceCard
+              key={idx}
+              {...s}
+              index={idx}
+              isVisible={isVisible}
+            />
           ))}
         </div>
       </div>
