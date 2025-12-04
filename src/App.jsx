@@ -9,6 +9,14 @@ import CareerPage from './pages/CareerPage'
 import ServicesPage from './pages/ServicesPage'
 import ContactPage from './pages/ContactPage'
 
+// Service Pages
+import DebtCollectionPage from './pages/services/DebtCollectionPage'
+import CustomerServicesPage from './pages/services/CustomerServicesPage'
+import SalesServicesPage from './pages/services/SalesServicesPage'
+import EmailSupportPage from './pages/services/EmailSupportPage'
+import LiveChatSupportPage from './pages/services/LiveChatSupportPage'
+import BPOOperationsPage from './pages/services/BPOOperationsPage'
+
 function App() {
   const [preloaderComplete, setPreloaderComplete] = useState(false);
 
@@ -25,6 +33,14 @@ function App() {
         <Route path="/career" element={<CareerPage />} />
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/contact" element={<ContactPage />} />
+
+        {/* Individual Service Pages */}
+        <Route path="/services/debt-collection" element={<DebtCollectionPage />} />
+        <Route path="/services/customer-services" element={<CustomerServicesPage />} />
+        <Route path="/services/sales-services" element={<SalesServicesPage />} />
+        <Route path="/services/email-support" element={<EmailSupportPage />} />
+        <Route path="/services/live-chat-support" element={<LiveChatSupportPage />} />
+        <Route path="/services/bpo-operations" element={<BPOOperationsPage />} />
       </Routes>
     </>
   )
