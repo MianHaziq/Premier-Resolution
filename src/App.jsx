@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 import './App.css'
 import Preloader from './components/ui/Preloader'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 import Home from './pages/Home'
 import AboutUsPage from './pages/AboutUsPage'
 import CareerPage from './pages/CareerPage'
@@ -42,6 +43,7 @@ function App() {
         <Route path="/services/live-chat-support" element={<LiveChatSupportPage />} />
         <Route path="/services/bpo-operations" element={<BPOOperationsPage />} />
       </Routes>
+      <Footer />
     </>
   )
 }
