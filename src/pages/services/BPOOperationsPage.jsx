@@ -1,5 +1,11 @@
-import ComingSoon from "../../components/ui/ComingSoon";
+import ServiceContentSection from "../../components/ServiceContentSection";
+import { bpoOperationsData } from "../../data/serviceData";
 
 export default function BPOOperationsPage() {
-  return <ComingSoon pageName="BPO Operations" />;
+  return (
+    <ServiceContentSection
+      serviceName="BPO Operations"
+      data={bpoOperationsData}
+    />
+  );
 }

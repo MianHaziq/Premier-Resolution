@@ -1,5 +1,11 @@
-import ComingSoon from "../../components/ui/ComingSoon";
+import ServiceContentSection from "../../components/ServiceContentSection";
+import { debtCollectionData } from "../../data/serviceData";
 
 export default function DebtCollectionPage() {
-  return <ComingSoon pageName="Debt Collection Services" />;
+  return (
+    <ServiceContentSection
+      serviceName="Debt Collection Services"
+      data={debtCollectionData}
+    />
+  );
 }

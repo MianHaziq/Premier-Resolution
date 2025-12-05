@@ -1,7 +1,11 @@
-import ComingSoon from "../../components/ui/ComingSoon";
+import ServiceContentSection from "../../components/ServiceContentSection";
+import { businessManagementData } from "../../data/serviceData";
 
-const BusinessManagementPage = () => {
-  return <ComingSoon pageName="Business Management Support" />;
-};
-
-export default BusinessManagementPage;
+export default function BusinessManagementPage() {
+  return (
+    <ServiceContentSection
+      serviceName="Business Management Support"
+      data={businessManagementData}
+    />
+  );
+}

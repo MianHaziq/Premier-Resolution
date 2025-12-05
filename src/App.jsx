@@ -4,6 +4,7 @@ import './App.css'
 import Preloader from './components/ui/Preloader'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import { ToastProvider } from './components/ui/Toast'
 import Home from './pages/Home'
 import AboutUsPage from './pages/AboutUsPage'
 import CareerPage from './pages/CareerPage'
@@ -24,7 +25,7 @@ function App() {
   const [preloaderComplete, setPreloaderComplete] = useState(false);
 
   return (
-    <>
+    <ToastProvider>
       {/* Preloader - Easy to remove: just delete this line */}
       <Preloader onComplete={() => setPreloaderComplete(true)} />
 
@@ -48,7 +49,7 @@ function App() {
         <Route path="/services/business-management" element={<BusinessManagementPage />} />
       </Routes>
       <Footer />
-    </>
+    </ToastProvider>
   )
 }
 

@@ -11,11 +11,11 @@ export default function ServiceCard({ icon, title, description, index = 0, isVis
   return (
     <div
       className={`
-        w-full max-w-[414px] h-[266px]
+        w-full max-w-[320px] sm:max-w-[360px] md:max-w-[414px] h-auto min-h-[240px] sm:min-h-[250px] md:min-h-[266px]
         rounded-[12px] border border-[#E5E7EB]
         bg-white
         flex flex-col
-        pt-[26px] pr-[22px] pb-[26px] pl-[22px]
+        pt-5 pr-4 pb-5 pl-4 sm:pt-[26px] sm:pr-[22px] sm:pb-[26px] sm:pl-[22px]
         gap-[10px]
         shadow-sm
         cursor-pointer

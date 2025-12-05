@@ -23,17 +23,17 @@ export default function ComingSoon({ pageName }) {
         </div>
 
         {/* Page Name */}
-        <h1 className="text-[48px] font-bold text-[#1a1a1a] mb-4">
+        <h1 className="text-[28px] sm:text-[36px] md:text-[48px] font-bold text-[#1a1a1a] mb-4">
           {pageName}
         </h1>
 
         {/* Coming Soon Text */}
-        <p className="text-[24px] text-[#0B9444] font-semibold mb-4">
+        <p className="text-[18px] sm:text-[21px] md:text-[24px] text-[#0B9444] font-semibold mb-4">
           Coming Soon
         </p>
 
         {/* Description */}
-        <p className="text-[17px] text-[#6B7280] max-w-[480px] mx-auto mb-10">
+        <p className="text-[14px] sm:text-[15px] md:text-[17px] text-[#6B7280] max-w-[480px] mx-auto mb-10">
           We're working hard to bring you something amazing.
           Stay tuned for updates!
         </p>

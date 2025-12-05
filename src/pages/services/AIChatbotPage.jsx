@@ -1,7 +1,11 @@
-import ComingSoon from "../../components/ui/ComingSoon";
+import ServiceContentSection from "../../components/ServiceContentSection";
+import { aiChatbotData } from "../../data/serviceData";
 
-const AIChatbotPage = () => {
-  return <ComingSoon pageName="AI Chatbot Automation 24/7" />;
-};
-
-export default AIChatbotPage;
+export default function AIChatbotPage() {
+  return (
+    <ServiceContentSection
+      serviceName="AI Chatbot Automation 24/7"
+      data={aiChatbotData}
+    />
+  );
+}

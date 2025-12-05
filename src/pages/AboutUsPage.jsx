@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { Headphones, Banknote, MessageCircle, Mail, Play, Check } from "lucide-react";
+import PageHeader from "../components/ui/PageHeader";
 
 // Real Stories data
 const realStories = [
@@ -56,9 +57,66 @@ const services = [
   },
 ];
 
+// Stats data
+const statsData = [
+  { number: 20, label: "Experience years" },
+  { number: 520, label: "Customers" },
+  { number: 320, label: "Projects done" },
+  { number: 40, label: "Awards" },
+];
+
+// CountUp component with animation
+const CountUpStat = ({ number, label, isVisible, delay }) => {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    if (!isVisible) return;
+
+    const duration = 2000; // 2 seconds
+    const steps = 60;
+    const stepDuration = duration / steps;
+    const increment = number / steps;
+
+    let currentStep = 0;
+
+    const timer = setTimeout(() => {
+      const interval = setInterval(() => {
+        currentStep++;
+        setCount(Math.min(Math.round(increment * currentStep), number));
+
+        if (currentStep >= steps) {
+          clearInterval(interval);
+          setCount(number);
+        }
+      }, stepDuration);
+
+      return () => clearInterval(interval);
+    }, delay);
+
+    return () => clearTimeout(timer);
+  }, [isVisible, number, delay]);
+
+  return (
+    <div className="text-center px-4 py-6 md:py-8">
+      {/* Number */}
+      <p className="text-[42px] sm:text-[48px] md:text-[56px] lg:text-[64px] font-bold text-[#1a1a1a] leading-none mb-2 md:mb-3">
+        {count}
+      </p>
+      {/* Label */}
+      <p className="text-[14px] md:text-[15px] lg:text-[16px] text-[#6B7280] mb-3">
+        {label}
+      </p>
+      {/* Green accent bar */}
+      <div className="w-8 h-1 bg-[#0B9444] mx-auto rounded-full" />
+    </div>
+  );
+};
+
 export default function AboutUsPage() {
   const [isVisible, setIsVisible] = useState(false);
+  const [statsVisible, setStatsVisible] = useState(false);
   const cardsRef = useRef(null);
+  const statsRef = useRef(null);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -81,16 +139,32 @@ export default function AboutUsPage() {
     return () => observer.disconnect();
   }, []);
 
+  // Intersection Observer for stats section
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setStatsVisible(true);
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    if (statsRef.current) {
+      observer.observe(statsRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <main className="pt-16 md:pt-20">
       {/* Hero Section */}
-      <section className="bg-[#0B9444] py-16 md:py-20 lg:py-24">
-        <div className="max-w-[1440px] 2xl:max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20 2xl:px-24">
-          <h1 className="text-[36px] md:text-[48px] lg:text-[56px] 2xl:text-[64px] font-bold text-white text-center">
-            About us
-          </h1>
-        </div>
-      </section>
+      <PageHeader
+        badge="Who We Are"
+        title="About Us"
+        subtitle="Empowering businesses through reliable communication, efficient operations, and customer-centered solutions."
+      />
 
       {/* Office Image + Overlapping Cards Section */}
       <section className="relative">
@@ -99,14 +173,14 @@ export default function AboutUsPage() {
           <img
             src="/ourOffice.jpg"
             alt="Our Office"
-            className="w-full h-[350px] md:h-[450px] lg:h-[550px] 2xl:h-[600px] object-cover"
+            className="w-full h-[200px] sm:h-[300px] md:h-[450px] lg:h-[550px] 2xl:h-[600px] object-cover"
           />
         </div>
 
         {/* Overlapping Cards Container */}
         <div
           ref={cardsRef}
-          className="relative -mt-20 md:-mt-24 lg:-mt-32 2xl:-mt-36 pb-16 md:pb-20 lg:pb-24"
+          className="relative -mt-12 sm:-mt-16 md:-mt-24 lg:-mt-32 2xl:-mt-36 pb-16 md:pb-20 lg:pb-24"
         >
           <div className="max-w-[1440px] 2xl:max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20 2xl:px-24">
             {/* Cards Grid */}
@@ -227,9 +301,26 @@ export default function AboutUsPage() {
               <img
                 src="/heroImage.jpg"
                 alt="Our Team"
-                className="w-full h-[300px] md:h-[400px] lg:h-[450px] 2xl:h-[500px] object-cover"
+                className="w-full h-[220px] sm:h-[280px] md:h-[400px] lg:h-[450px] 2xl:h-[500px] object-cover"
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Counter Section */}
+      <section ref={statsRef} className="bg-white py-14 md:py-18 lg:py-20">
+        <div className="max-w-[1440px] 2xl:max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20 2xl:px-24">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 lg:gap-12">
+            {statsData.map((stat, index) => (
+              <CountUpStat
+                key={index}
+                number={stat.number}
+                label={stat.label}
+                isVisible={statsVisible}
+                delay={index * 150}
+              />
+            ))}
           </div>
         </div>
       </section>
@@ -364,7 +455,7 @@ export default function AboutUsPage() {
                 <img
                   src={story.image}
                   alt={story.author}
-                  className="w-full h-[480px] md:h-[520px] lg:h-[540px] 2xl:h-[580px] object-cover"
+                  className="w-full h-[320px] sm:h-[400px] md:h-[480px] lg:h-[540px] 2xl:h-[580px] object-cover"
                 />
 
                 {/* Play Button - Upper middle */}

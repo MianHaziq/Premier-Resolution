@@ -1,5 +1,11 @@
-import ComingSoon from "../../components/ui/ComingSoon";
+import ServiceContentSection from "../../components/ServiceContentSection";
+import { liveChatSupportData } from "../../data/serviceData";
 
 export default function LiveChatSupportPage() {
-  return <ComingSoon pageName="Live Chat Support" />;
+  return (
+    <ServiceContentSection
+      serviceName="Live Chat & Customer Support"
+      data={liveChatSupportData}
+    />
+  );
 }

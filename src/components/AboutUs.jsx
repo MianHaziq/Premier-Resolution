@@ -68,7 +68,7 @@ export default function AboutUs() {
 
         {/* LEFT SIDE - VIDEO/IMAGE */}
         <div
-          className={`relative w-full lg:w-[580px] h-[500px] lg:h-[680px] shrink-0 transition-all duration-1000 ease-out ${
+          className={`relative w-full lg:w-[580px] h-[300px] sm:h-[400px] md:h-[500px] lg:h-[680px] shrink-0 transition-all duration-1000 ease-out ${
             isVisible
               ? "opacity-100 translate-x-0"
               : "opacity-0 -translate-x-20"
@@ -138,7 +138,7 @@ export default function AboutUs() {
           />
 
           {/* Statistics Grid */}
-          <div className="grid grid-cols-2 gap-y-10 max-w-[520px]">
+          <div className="grid grid-cols-2 gap-y-6 sm:gap-y-10 max-w-full sm:max-w-[520px]">
             {stats.map((stat, index) => (
               <div
                 key={index}

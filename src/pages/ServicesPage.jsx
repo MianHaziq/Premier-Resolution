@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Play } from "lucide-react";
+import PageHeader from "../components/ui/PageHeader";
 
 // Services data
 const services = [
@@ -87,13 +88,11 @@ export default function ServicesPage() {
   return (
     <main className="pt-16 md:pt-20">
       {/* Hero Section */}
-      <section className="bg-[#0B9444] py-16 md:py-20 lg:py-24">
-        <div className="max-w-[1440px] 2xl:max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20 2xl:px-24">
-          <h1 className="text-[36px] md:text-[48px] lg:text-[56px] 2xl:text-[64px] font-bold text-white text-center">
-            Our Services
-          </h1>
-        </div>
-      </section>
+      <PageHeader
+        badge="What We Offer"
+        title="Our Services"
+        subtitle="Comprehensive business solutions designed to help you grow, engage customers, and streamline operations."
+      />
 
       {/* Services Grid Section */}
       <section className="bg-[#FAFAFB] py-16 md:py-20 lg:py-24">

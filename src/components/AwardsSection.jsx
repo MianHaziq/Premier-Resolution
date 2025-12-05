@@ -156,7 +156,7 @@ export default function AwardsSection() {
                 >
                   {/* Number and Label */}
                   <div>
-                    <p className="text-[28px] md:text-[36px] 2xl:text-[40px] font-bold text-[#1a1a1a] leading-none">
+                    <p className="text-[22px] sm:text-[28px] md:text-[36px] lg:text-[38px] 2xl:text-[40px] font-bold text-[#1a1a1a] leading-none">
                       {counters[index]}{stat.suffix}
                     </p>
                     <p className="text-[13px] md:text-[14px] 2xl:text-[15px] text-[#6B7280] mt-1">
@@ -189,12 +189,12 @@ export default function AwardsSection() {
               <img
                 src="/achievment.png"
                 alt="Conference Achievement"
-                className="w-full lg:w-[540px] 2xl:w-[620px] h-[300px] md:h-[380px] lg:h-[420px] 2xl:h-[480px] object-cover rounded-2xl shadow-lg"
+                className="w-full sm:max-w-[480px] md:max-w-[520px] lg:w-[540px] 2xl:w-[620px] h-[220px] sm:h-[280px] md:h-[380px] lg:h-[420px] 2xl:h-[480px] object-cover rounded-2xl shadow-lg mx-auto lg:mx-0"
               />
 
               {/* Award Card - Floating */}
               <div
-                className={`absolute -bottom-6 -left-4 md:-left-8 lg:-left-12 2xl:-left-16 bg-white rounded-xl shadow-xl p-4 md:p-5 2xl:p-6 flex items-center gap-4 max-w-[320px] md:max-w-[360px] 2xl:max-w-[400px] transition-all duration-700 ease-out ${
+                className={`absolute -bottom-4 sm:-bottom-6 left-0 sm:-left-2 md:-left-8 lg:-left-12 2xl:-left-16 bg-white rounded-xl shadow-xl p-3 sm:p-4 md:p-5 2xl:p-6 flex items-center gap-3 sm:gap-4 max-w-[280px] sm:max-w-[320px] md:max-w-[360px] 2xl:max-w-[400px] transition-all duration-700 ease-out ${
                   isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
                 }`}
                 style={{ transitionDelay: "800ms" }}

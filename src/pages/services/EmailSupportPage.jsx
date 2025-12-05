@@ -1,5 +1,11 @@
-import ComingSoon from "../../components/ui/ComingSoon";
+import ServiceContentSection from "../../components/ServiceContentSection";
+import { emailSupportData } from "../../data/serviceData";
 
 export default function EmailSupportPage() {
-  return <ComingSoon pageName="Email Support" />;
+  return (
+    <ServiceContentSection
+      serviceName="Email Marketing Solutions"
+      data={emailSupportData}
+    />
+  );
 }

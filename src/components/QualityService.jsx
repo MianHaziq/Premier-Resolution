@@ -236,7 +236,7 @@ export default function QualityService() {
             {/* Service Card */}
             <div className="bg-white rounded-[12px] shadow-lg overflow-hidden border border-gray-100">
               {/* Card Image */}
-              <div className="w-full h-[360px] overflow-hidden relative">
+              <div className="w-full h-[240px] sm:h-[280px] md:h-[320px] lg:h-[360px] overflow-hidden relative">
                 <img
                   src={currentService.image}
                   alt={currentService.title}
@@ -251,7 +251,7 @@ export default function QualityService() {
               </div>
 
               {/* Card Content */}
-              <div className="p-6">
+              <div className="p-4 sm:p-5 md:p-6">
                 <div
                   className={`flex gap-4 transition-all duration-500 ease-out ${
                     isAnimating
@@ -266,7 +266,7 @@ export default function QualityService() {
 
                   {/* Text Content */}
                   <div>
-                    <h3 className="text-[22px] font-bold text-[#1a1a1a] mb-2">
+                    <h3 className="text-[18px] sm:text-[20px] md:text-[22px] font-bold text-[#1a1a1a] mb-2">
                       {currentService.title}
                     </h3>
                     <p className="text-[15px] text-[#6B7280] leading-[1.6]">
@@ -330,7 +330,7 @@ export default function QualityService() {
 
             {/* Main Heading - Animated */}
             <h2
-              className={`text-[40px] md:text-[44px] font-bold text-[#1a1a1a] leading-[1.2] mb-6 transition-all duration-500 ease-out ${
+              className={`text-[28px] sm:text-[32px] md:text-[40px] lg:text-[44px] font-bold text-[#1a1a1a] leading-[1.2] mb-6 transition-all duration-500 ease-out ${
                 isAnimating
                   ? slideDirection === "right"
                     ? "translate-x-10 opacity-0"
@@ -355,7 +355,7 @@ export default function QualityService() {
             </p>
 
             {/* Features Grid - Animated */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 sm:gap-x-6 md:gap-x-8 gap-y-4 sm:gap-y-6">
               {currentService.features.map((feature, index) => (
                 <div
                   key={`${currentService.id}-${index}`}
