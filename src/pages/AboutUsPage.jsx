@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { Headphones, Banknote, MessageCircle, Mail, Play } from "lucide-react";
+import { Headphones, Banknote, MessageCircle, Mail, Play, Check } from "lucide-react";
 
 // Real Stories data
 const realStories = [
@@ -158,56 +158,77 @@ export default function AboutUsPage() {
         </div>
       </section>
 
-      {/* Who We Are Section */}
+      {/* Who We Are / Why Choose Us Section */}
       <section className="bg-[#FAFAFB] py-16 md:py-20 lg:py-24">
         <div className="max-w-[1440px] 2xl:max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20 2xl:px-24">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
             {/* Left - Content */}
-            <div>
-              <p className="text-[16px] text-[#6B7280] mb-2">
-                <span className="italic text-[#0B9444] relative">
+            <div className="order-2 lg:order-1">
+              {/* Who We Are Label */}
+              <p className="text-[14px] md:text-[15px] text-[#1a1a1a] mb-3">
+                <span className="italic relative">
                   Who
-                  <span className="absolute left-0 right-0 bottom-0 h-[2px] bg-[#0B9444]" />
+                  <span className="absolute left-0 right-0 bottom-0 h-[1.5px] bg-[#1a1a1a]" />
                 </span>
                 <span className="italic"> We Are</span>
               </p>
-              <h2 className="text-[32px] md:text-[40px] lg:text-[44px] 2xl:text-[48px] font-bold text-[#1a1a1a] leading-tight mb-6">
-                Your Trusted Business Partner
+
+              {/* Main Heading */}
+              <h2 className="text-[28px] md:text-[36px] lg:text-[42px] 2xl:text-[46px] font-bold text-[#1a1a1a] leading-tight mb-5 md:mb-6">
+                Why choose us ?
               </h2>
-              <p className="text-[15px] md:text-[16px] 2xl:text-[17px] text-[#6B7280] leading-relaxed mb-6">
-                Premier Resolutions is a leading provider of comprehensive business process outsourcing solutions. With years of experience and a dedicated team of professionals, we help businesses streamline their operations and achieve exceptional results.
-              </p>
-              <p className="text-[15px] md:text-[16px] 2xl:text-[17px] text-[#6B7280] leading-relaxed mb-8">
-                Our commitment to excellence, combined with cutting-edge technology and industry best practices, enables us to deliver customized solutions that drive growth and enhance customer satisfaction.
+
+              {/* Description */}
+              <p className="text-[13px] md:text-[14px] lg:text-[15px] text-[#6B7280] leading-relaxed mb-8 md:mb-10">
+                Our mission is to empower organizations through reliable communication, efficient operations, and customer-centered solutions. We help businesses improve performance through strategic support and professional service delivery.
               </p>
 
-              {/* Stats */}
-              <div className="flex flex-wrap gap-8">
-                <div>
-                  <p className="text-[32px] md:text-[40px] font-bold text-[#0B9444]">8+</p>
-                  <p className="text-[14px] text-[#6B7280]">Years Experience</p>
+              {/* Checklist Items */}
+              <div className="space-y-5 md:space-y-6 mb-8 md:mb-10">
+                {/* Item 1 */}
+                <div className="flex items-center gap-4">
+                  <div className="w-6 h-6 md:w-7 md:h-7 rounded-full bg-[#0B9444] flex items-center justify-center flex-shrink-0">
+                    <Check size={14} className="text-white" strokeWidth={3} />
+                  </div>
+                  <p className="text-[14px] md:text-[15px] lg:text-[16px] text-[#1a1a1a] font-medium">
+                    Our team is highly skilled and trained
+                  </p>
                 </div>
-                <div>
-                  <p className="text-[32px] md:text-[40px] font-bold text-[#0B9444]">420+</p>
-                  <p className="text-[14px] text-[#6B7280]">Happy Clients</p>
+
+                {/* Item 2 */}
+                <div className="flex items-center gap-4">
+                  <div className="w-6 h-6 md:w-7 md:h-7 rounded-full bg-[#0B9444] flex items-center justify-center flex-shrink-0">
+                    <Check size={14} className="text-white" strokeWidth={3} />
+                  </div>
+                  <p className="text-[14px] md:text-[15px] lg:text-[16px] text-[#1a1a1a] font-medium">
+                    We constantly upgrade our tools and processes
+                  </p>
                 </div>
-                <div>
-                  <p className="text-[32px] md:text-[40px] font-bold text-[#0B9444]">98%</p>
-                  <p className="text-[14px] text-[#6B7280]">Satisfaction Rate</p>
+
+                {/* Item 3 */}
+                <div className="flex items-center gap-4">
+                  <div className="w-6 h-6 md:w-7 md:h-7 rounded-full bg-[#0B9444] flex items-center justify-center flex-shrink-0">
+                    <Check size={14} className="text-white" strokeWidth={3} />
+                  </div>
+                  <p className="text-[14px] md:text-[15px] lg:text-[16px] text-[#1a1a1a] font-medium">
+                    We maintain strong and respectful customer relationships
+                  </p>
                 </div>
               </div>
+
+              {/* Bottom Text */}
+              <p className="text-[12px] md:text-[13px] text-[#9CA3AF] italic leading-relaxed">
+                We have designed a variety of comprehensive solutions to meet needs of our any potential partners.
+              </p>
             </div>
 
             {/* Right - Image */}
-            <div className="relative">
+            <div className="order-1 lg:order-2">
               <img
-                src="/about-team.jpg"
+                src="/heroImage.jpg"
                 alt="Our Team"
-                className="w-full h-[350px] md:h-[420px] lg:h-[480px] object-cover rounded-2xl shadow-xl"
+                className="w-full h-[300px] md:h-[400px] lg:h-[450px] 2xl:h-[500px] object-cover"
               />
-              {/* Decorative element */}
-              <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-[#0B9444]/10 rounded-2xl -z-10" />
-              <div className="absolute -top-4 -right-4 w-32 h-32 bg-[#0B9444]/5 rounded-full -z-10" />
             </div>
           </div>
         </div>
@@ -254,60 +275,67 @@ export default function AboutUsPage() {
       </section>
 
       {/* Meet CEO Section */}
-      <section className="bg-white py-16 md:py-20 lg:py-24">
-        <div className="max-w-[1440px] 2xl:max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20 2xl:px-24">
-          <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-            <div className="flex flex-col lg:flex-row">
-              {/* Left - Image */}
-              <div className="lg:w-[40%] 2xl:w-[38%]">
-                <img
-                  src="/heroImage.jpg"
-                  alt="Hassan Sarfaraz"
-                  className="w-full h-[300px] md:h-[400px] lg:h-full object-cover"
-                />
-              </div>
+      <section className="relative pt-16 md:pt-20 lg:pt-24">
+        {/* Green Gradient Background - fades from transparent top to solid green bottom */}
+        <div className="absolute bottom-0 left-0 right-0 h-[320px] md:h-[380px] lg:h-[420px] bg-linear-to-t from-[#0B9444] via-[#0B9444]/70 to-transparent" />
 
-              {/* Right - Content */}
-              <div className="lg:w-[60%] 2xl:w-[62%] p-6 md:p-8 lg:p-10 2xl:p-12 flex flex-col justify-center">
-                {/* Meet Label */}
-                <p className="text-[14px] md:text-[15px] text-[#0B9444] font-medium mb-2">
-                  Meet
-                </p>
+        {/* Content Container - card positioned 65px from bottom */}
+        <div className="relative pb-[50px] md:pb-[60px] lg:pb-[65px]">
+          <div className="max-w-[1440px] 2xl:max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20 2xl:px-24">
+            {/* Card */}
+            <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
+              <div className="flex flex-col lg:flex-row">
+                {/* Left - Image */}
+                <div className="lg:w-[38%]">
+                  <img
+                    src="/heroImage.jpg"
+                    alt="Hassan Sarfaraz"
+                    className="w-full h-[280px] p-5 md:h-[380px] lg:h-full min-h-[400px] lg:min-h-[480px] object-cover"
+                  />
+                </div>
 
-                {/* Name */}
-                <h2 className="text-[28px] md:text-[36px] lg:text-[40px] 2xl:text-[44px] font-bold text-[#1a1a1a] mb-2">
-                  Hassan Sarfaraz
-                </h2>
+                {/* Right - Content */}
+                <div className="lg:w-[62%] p-6 md:p-8 lg:py-10 lg:px-12 xl:py-12 xl:px-14 flex flex-col justify-center">
+                  {/* Meet Label */}
+                  <p className="text-[13px] md:text-[14px] text-[#0B9444] font-medium mb-2 md:mb-3">
+                    Meet
+                  </p>
 
-                {/* Tagline */}
-                <p className="text-[14px] md:text-[15px] text-[#0B9444] font-medium mb-6">
-                  Premiere Resolution – Driving Success
-                </p>
+                  {/* Name */}
+                  <h2 className="text-[26px] md:text-[32px] lg:text-[36px] xl:text-[40px] font-bold text-[#1a1a1a] mb-1 md:mb-2">
+                    Hassan Sarfaraz
+                  </h2>
 
-                {/* Description */}
-                <p className="text-[14px] md:text-[15px] 2xl:text-[16px] text-[#6B7280] leading-relaxed mb-8">
-                  I'm Hassan Sarfraz, CEO of Premiere Resolution, and I'm here to guide your business on the path to operational excellence and growth. With years of experience in BPO services, customer experience, debt collection, sales support, and digital engagement, I bring a strategic perspective to help organizations streamline processes and achieve measurable results. Whether you are looking to scale your customer support, enhance operational efficiency, or drive revenue through sales and back-office solutions, Premiere Resolution is your trusted partner to make it happen.
-                </p>
+                  {/* Tagline */}
+                  <p className="text-[13px] md:text-[14px] text-[#0B9444] italic mb-5 md:mb-6 lg:mb-8">
+                    Premiere Resolution – Driving Success
+                  </p>
 
-                {/* Email CTA */}
-                <div className="inline-block">
-                  <a
-                    href="mailto:Hassansarfaraz@premierresolutions.net"
-                    className="inline-block bg-[#0B9444] rounded-xl px-6 py-4 hover:bg-[#098039] transition-colors"
-                  >
-                    <p className="text-[12px] md:text-[13px] text-white/80 mb-1">
-                      Let's connect through email
-                    </p>
-                    <p className="text-[14px] md:text-[15px] text-white font-medium">
-                      Hassansarfaraz@premierresolutions.net
-                    </p>
-                  </a>
+                  {/* Description */}
+                  <p className="text-[13px] md:text-[14px] lg:text-[15px] text-[#6B7280] leading-[1.75] md:leading-[1.8] mb-6 md:mb-8 lg:mb-10">
+                    I'm Hassan Sarfraz, CEO of Premiere Resolution, and I'm here to guide your business on the path to operational excellence and growth. With years of experience in BPO services, customer experience, debt collection, sales support, and digital engagement, I bring a strategic perspective to help organizations streamline processes and achieve measurable results. Whether you are looking to scale your customer support, enhance operational efficiency, or drive revenue through sales and back-office solutions, Premiere Resolution is your trusted partner to make it happen.
+                  </p>
+
+                  {/* Email CTA */}
+                  <div>
+                    <a
+                      href="mailto:Hassansarfaraz@premierresolutions.net"
+                      className="inline-block bg-[#0B9444] rounded-full px-5 md:px-7 py-3 md:py-4 hover:bg-[#098039] transition-colors"
+                    >
+                      <p className="text-[10px] md:text-[11px] text-white/90 mb-0.5">
+                        Let's connect through email
+                      </p>
+                      <p className="text-[12px] md:text-[13px] lg:text-[14px] text-white font-medium">
+                        Hassansarfaraz@premierresolutions.net
+                      </p>
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            {/* Bottom Green Accent Bar */}
-            <div className="h-3 md:h-4 bg-[#0B9444]" />
+              {/* Bottom Green Accent Bar */}
+              <div className="h-2 md:h-[10px] lg:h-3 bg-[#0B9444]" />
+            </div>
           </div>
         </div>
       </section>

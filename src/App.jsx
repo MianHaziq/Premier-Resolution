@@ -17,6 +17,8 @@ import SalesServicesPage from './pages/services/SalesServicesPage'
 import EmailSupportPage from './pages/services/EmailSupportPage'
 import LiveChatSupportPage from './pages/services/LiveChatSupportPage'
 import BPOOperationsPage from './pages/services/BPOOperationsPage'
+import AIChatbotPage from './pages/services/AIChatbotPage'
+import BusinessManagementPage from './pages/services/BusinessManagementPage'
 
 function App() {
   const [preloaderComplete, setPreloaderComplete] = useState(false);
@@ -42,6 +44,8 @@ function App() {
         <Route path="/services/email-support" element={<EmailSupportPage />} />
         <Route path="/services/live-chat-support" element={<LiveChatSupportPage />} />
         <Route path="/services/bpo-operations" element={<BPOOperationsPage />} />
+        <Route path="/services/ai-chatbot" element={<AIChatbotPage />} />
+        <Route path="/services/business-management" element={<BusinessManagementPage />} />
       </Routes>
       <Footer />
     </>
