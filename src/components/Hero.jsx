@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Hero({ preloaderComplete = false }) {
   const [isVisible, setIsVisible] = useState(false);
@@ -83,8 +84,9 @@ export default function Hero({ preloaderComplete = false }) {
           </p>
 
           {/* Animated button */}
-          <button
-            className={`mt-8 bg-[#0B9444] text-white px-6 py-3 rounded-lg text-[16px] font-medium hover:bg-[#098039] hover:scale-105 active:scale-95 transition-all duration-300 ${
+          <Link
+            to="/contact"
+            className={`inline-block mt-8 bg-[#0B9444] text-white px-6 py-3 rounded-lg text-[16px] font-medium hover:bg-[#098039] hover:scale-105 active:scale-95 transition-all duration-300 ${
               isVisible
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-10"
@@ -92,7 +94,7 @@ export default function Hero({ preloaderComplete = false }) {
             style={{ transitionDelay: "750ms" }}
           >
             Get a Consultation
-          </button>
+          </Link>
         </div>
 
         {/* RIGHT IMAGE - Animated */}

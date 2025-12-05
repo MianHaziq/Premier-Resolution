@@ -25,7 +25,7 @@ const impactCards = [
 
 export default function ImpactSection() {
   return (
-    <section className="bg-[#FAFAFB] py-16 md:py-20 lg:py-24 mt-10">
+    <section className="bg-[#FAFAFB] py-16 md:py-20 lg:py-24">
       <div className="max-w-[1440px] 2xl:max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20 2xl:px-24">
         {/* Header */}
         <div className="text-center mb-12 md:mb-16">

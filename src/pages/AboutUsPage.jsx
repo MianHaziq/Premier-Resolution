@@ -233,7 +233,7 @@ export default function AboutUsPage() {
       </section>
 
       {/* Who We Are / Why Choose Us Section */}
-      <section className="bg-[#FAFAFB] py-16 md:py-20 lg:py-24">
+      <section className="bg-[#FAFAFB] py-16 md:py-20 lg:py-24 mt-8 md:mt-12 lg:mt-16">
         <div className="max-w-[1440px] 2xl:max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20 2xl:px-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
             {/* Left - Content */}
@@ -309,7 +309,7 @@ export default function AboutUsPage() {
       </section>
 
       {/* Stats Counter Section */}
-      <section ref={statsRef} className="bg-white py-14 md:py-18 lg:py-20">
+      <section ref={statsRef} className="bg-white py-14 md:py-18 lg:py-20 mt-8 md:mt-12 lg:mt-16">
         <div className="max-w-[1440px] 2xl:max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20 2xl:px-24">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 lg:gap-12">
             {statsData.map((stat, index) => (
@@ -326,7 +326,7 @@ export default function AboutUsPage() {
       </section>
 
       {/* Mission & Vision Section */}
-      <section className="bg-white py-16 md:py-20 lg:py-24">
+      <section className="bg-white py-16 md:py-20 lg:py-24 mt-8 md:mt-12 lg:mt-16">
         <div className="max-w-[1440px] 2xl:max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20 2xl:px-24">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
             {/* Mission */}
@@ -366,7 +366,7 @@ export default function AboutUsPage() {
       </section>
 
       {/* Meet CEO Section */}
-      <section className="relative pt-16 md:pt-20 lg:pt-24">
+      <section className="relative pt-16 md:pt-20 lg:pt-24 mt-8 md:mt-12 lg:mt-16">
         {/* Green Gradient Background - fades from transparent top to solid green bottom */}
         <div className="absolute bottom-0 left-0 right-0 h-[320px] md:h-[380px] lg:h-[420px] bg-linear-to-t from-[#0B9444] via-[#0B9444]/70 to-transparent" />
 
@@ -432,7 +432,7 @@ export default function AboutUsPage() {
       </section>
 
       {/* Real Stories Section */}
-      <section className="bg-[#FAFAFB] py-16 md:py-20 lg:py-24">
+      <section className="bg-[#FAFAFB] py-16 md:py-20 lg:py-24 mt-8 md:mt-12 lg:mt-16">
         <div className="max-w-[1440px] 2xl:max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20 2xl:px-24">
           {/* Header */}
           <div className="text-center mb-12 md:mb-16">
@@ -486,21 +486,70 @@ export default function AboutUsPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="bg-[#0B9444] py-16 md:py-20">
-        <div className="max-w-[1440px] 2xl:max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20 2xl:px-24 text-center">
-          <h2 className="text-[28px] md:text-[36px] lg:text-[42px] font-bold text-white mb-4">
-            Ready to Partner with Us?
-          </h2>
-          <p className="text-[15px] md:text-[16px] text-white/80 max-w-[600px] mx-auto mb-8">
-            Let's discuss how Premier Resolutions can help transform your business operations and drive success.
-          </p>
-          <Link
-            to="/contact"
-            className="inline-flex items-center gap-2 bg-white text-[#0B9444] px-8 py-4 rounded-xl font-semibold text-[16px] hover:bg-white/90 transition-all duration-300 shadow-lg hover:shadow-xl"
-          >
-            Contact Us Today
-          </Link>
+      {/* Consultation CTA Banner */}
+      <section className="relative h-[280px] sm:h-[320px] md:h-[360px] lg:h-[400px] overflow-hidden mt-8 md:mt-12 lg:mt-16">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img
+            src="/consultationBg.png"
+            alt="Business consultation"
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        {/* Green Gradient Overlay - Left to Right fade */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0B9444] via-[#0B9444]/90 via-[45%] to-transparent" />
+
+        {/* Content */}
+        <div className="relative h-full max-w-[1440px] 2xl:max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20 2xl:px-24 flex items-center">
+          <div className="max-w-[500px] md:max-w-[550px] lg:max-w-[600px]">
+            {/* Heading */}
+            <h2 className="text-[24px] sm:text-[28px] md:text-[32px] lg:text-[38px] xl:text-[42px] font-bold text-white leading-tight mb-4 md:mb-5 italic">
+              Ready to Take Your Business Operations to the Next Level?
+            </h2>
+
+            {/* Description */}
+            <p className="text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] text-white/85 leading-relaxed mb-6 md:mb-8">
+              Streamline processes, reduce workload, and scale confidently with our expert customer support and management solutions.
+            </p>
+
+            {/* Button */}
+            <Link
+              to="/contact"
+              className="inline-block bg-white text-[#1a1a1a] px-6 sm:px-8 py-3 sm:py-3.5 rounded-full font-medium text-[14px] sm:text-[15px] hover:bg-white/95 transition-all duration-300 shadow-lg"
+            >
+              Book a Consultation
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Trusted Partners Logo Carousel */}
+      <section className="bg-white py-8 md:py-10 lg:py-12 overflow-hidden mt-8 md:mt-12 lg:mt-16">
+        <div className="relative w-full">
+          {/* Marquee Container */}
+          <div className="flex w-max animate-marquee">
+            {/* First set of logos */}
+            <div className="flex items-center gap-16 md:gap-20 lg:gap-24 shrink-0 pr-16 md:pr-20 lg:pr-24">
+              <img src="/avanade.png" alt="Avanade" className="h-6 md:h-7 lg:h-8 w-auto object-contain" />
+              <img src="/avanade.png" alt="Avanade" className="h-6 md:h-7 lg:h-8 w-auto object-contain" />
+              <img src="/avanade.png" alt="Avanade" className="h-6 md:h-7 lg:h-8 w-auto object-contain" />
+              <img src="/avanade.png" alt="Avanade" className="h-6 md:h-7 lg:h-8 w-auto object-contain" />
+              <img src="/avanade.png" alt="Avanade" className="h-6 md:h-7 lg:h-8 w-auto object-contain" />
+              <img src="/avanade.png" alt="Avanade" className="h-6 md:h-7 lg:h-8 w-auto object-contain" />
+              <img src="/avanade.png" alt="Avanade" className="h-6 md:h-7 lg:h-8 w-auto object-contain" />
+            </div>
+            {/* Duplicate set for seamless loop */}
+            <div className="flex items-center gap-16 md:gap-20 lg:gap-24 shrink-0 pr-16 md:pr-20 lg:pr-24">
+              <img src="/avanade.png" alt="Avanade" className="h-6 md:h-7 lg:h-8 w-auto object-contain" />
+              <img src="/avanade.png" alt="Avanade" className="h-6 md:h-7 lg:h-8 w-auto object-contain" />
+              <img src="/avanade.png" alt="Avanade" className="h-6 md:h-7 lg:h-8 w-auto object-contain" />
+              <img src="/avanade.png" alt="Avanade" className="h-6 md:h-7 lg:h-8 w-auto object-contain" />
+              <img src="/avanade.png" alt="Avanade" className="h-6 md:h-7 lg:h-8 w-auto object-contain" />
+              <img src="/avanade.png" alt="Avanade" className="h-6 md:h-7 lg:h-8 w-auto object-contain" />
+              <img src="/avanade.png" alt="Avanade" className="h-6 md:h-7 lg:h-8 w-auto object-contain" />
+            </div>
+          </div>
         </div>
       </section>
     </main>

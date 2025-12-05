@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import { Play } from "lucide-react";
 
 export default function AboutUs() {
@@ -162,16 +163,17 @@ export default function AboutUs() {
           </div>
 
           {/* CTA Button */}
-          <button
-            className={`mt-12 w-fit bg-[#0B9444] text-white px-8 py-4 rounded-lg text-[16px] font-semibold hover:bg-[#098039] hover:scale-105 active:scale-95 transition-all duration-300 ease-out ${
+          <Link
+            to="/about"
+            className={`inline-block mt-12 w-fit bg-[#0B9444] text-white px-8 py-4 rounded-lg text-[16px] font-semibold hover:bg-[#098039] hover:scale-105 active:scale-95 transition-all duration-300 ease-out ${
               isVisible
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-8"
             }`}
             style={{ transitionDelay: "1100ms" }}
           >
-            Book a Consultation
-          </button>
+            Learn More About Us
+          </Link>
         </div>
 
       </div>
