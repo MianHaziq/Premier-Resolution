@@ -7,19 +7,19 @@ import PageHeader from "../components/ui/PageHeader";
 const realStories = [
   {
     id: 1,
-    image: "/heroImage.jpg",
+    video: "v1.mp4",
     quote: "Working with Premiere Resolutions has transformed our customer engagement. Their team is highly responsive and always professional.",
     author: "Emily Jack",
   },
   {
     id: 2,
-    image: "/heroImage.jpg",
+video: "v1.mp4",
     quote: "Their debt recovery support helped us improve payment collection without damaging client relationships. Highly recommended.",
     author: "Jake Lawson",
   },
   {
     id: 3,
-    image: "/heroImage.jpg",
+    video: "v1.mp4",
     quote: "Professional, consistent, and reliable. Their call center team has become an extension of our own company.",
     author: "Nancy Nelon",
   },
@@ -117,7 +117,16 @@ export default function AboutUsPage() {
   const [statsVisible, setStatsVisible] = useState(false);
   const cardsRef = useRef(null);
   const statsRef = useRef(null);
-
+  const [activeVideo, setActiveVideo] = useState(null);
+  const videoRefs = useRef([]);
+  
+  useEffect(() => {
+    videoRefs.current.forEach((video, index) => {
+      if (!video) return;
+      if (activeVideo === index) video.play();
+      else video.pause();
+    });
+  }, [activeVideo]);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -452,18 +461,35 @@ export default function AboutUsPage() {
                 className="relative rounded-[20px] overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
               >
                 {/* Image - Full card */}
-                <img
+                {/* <img
                   src={story.image}
                   alt={story.author}
                   className="w-full h-[320px] sm:h-[400px] md:h-[480px] lg:h-[540px] 2xl:h-[580px] object-cover"
-                />
+                /> */}
+       <video
+            src={story.video}
+            ref={(el) => (activeVideo === story.id ? el?.play() : el?.pause())}
+            controls={activeVideo === story.id}   // Show controls only if playing
+            className="w-full h-[320px] sm:h-[400px] md:h-[480px] lg:h-[540px] 2xl:h-[580px] object-cover"
+          />
 
+          {/* Play button shown only when not active */}
+          {activeVideo !== story.id && (
+            <div className="absolute top-[30%] left-1/2 -translate-x-1/2 -translate-y-1/2">
+              <button
+                onClick={() => setActiveVideo(story.id)}
+                className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center shadow-md hover:bg-white hover:scale-110 transition-all duration-300"
+              >
+                <Play size={22} className="text-[#1a1a1a]" />
+              </button>
+            </div>
+          )}
                 {/* Play Button - Upper middle */}
-                <div className="absolute top-[30%] left-1/2 -translate-x-1/2 -translate-y-1/2">
+                {/* <div className="absolute top-[30%] left-1/2 -translate-x-1/2 -translate-y-1/2">
                   <button className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center shadow-md hover:bg-white hover:scale-110 transition-all duration-300">
                     <Play size={20} className="text-[#1a1a1a] fill-[#1a1a1a] ml-0.5" />
                   </button>
-                </div>
+                </div> */}
 
                 {/* White Gradient Fade from bottom */}
                 <div className="absolute bottom-0 left-0 right-0 h-[55%] bg-linear-to-t from-white via-white/90 to-transparent" />
@@ -531,23 +557,23 @@ export default function AboutUsPage() {
           <div className="flex w-max animate-marquee">
             {/* First set of logos */}
             <div className="flex items-center gap-16 md:gap-20 lg:gap-24 shrink-0 pr-16 md:pr-20 lg:pr-24">
-              <img src="/avanade.png" alt="Avanade" className="h-6 md:h-7 lg:h-8 w-auto object-contain" />
-              <img src="/avanade.png" alt="Avanade" className="h-6 md:h-7 lg:h-8 w-auto object-contain" />
-              <img src="/avanade.png" alt="Avanade" className="h-6 md:h-7 lg:h-8 w-auto object-contain" />
-              <img src="/avanade.png" alt="Avanade" className="h-6 md:h-7 lg:h-8 w-auto object-contain" />
-              <img src="/avanade.png" alt="Avanade" className="h-6 md:h-7 lg:h-8 w-auto object-contain" />
-              <img src="/avanade.png" alt="Avanade" className="h-6 md:h-7 lg:h-8 w-auto object-contain" />
-              <img src="/avanade.png" alt="Avanade" className="h-6 md:h-7 lg:h-8 w-auto object-contain" />
+              <img src="/morgan.png" alt="morgan" className="h-8 md:h-9 lg:h-10 w-auto object-contain" />
+              <img src="/amtrak.png" alt="amtrak" className="h-3 md:h-3 lg:h-4 w-auto object-contain" />
+              <img src="/accenture.png" alt="accenture" className="h-12 md:h-13 lg:h-15 w-auto object-contain" />
+              <img src="/hcl.png" alt="hcl" className="h-12 md:h-13 lg:h-15 w-auto object-contain" />
+              <img src="/caliber.png" alt="caliber" className="h-6 md:h-7 lg:h-8 w-auto object-contain" />
+              <img src="/wwt.png" alt="wwt" className="h-6 md:h-7 lg:h-8 w-auto object-contain" />
+              <img src="/avanade.png" alt="avanade" className="h-6 md:h-7 lg:h-8 w-auto object-contain" />
             </div>
             {/* Duplicate set for seamless loop */}
             <div className="flex items-center gap-16 md:gap-20 lg:gap-24 shrink-0 pr-16 md:pr-20 lg:pr-24">
-              <img src="/avanade.png" alt="Avanade" className="h-6 md:h-7 lg:h-8 w-auto object-contain" />
-              <img src="/avanade.png" alt="Avanade" className="h-6 md:h-7 lg:h-8 w-auto object-contain" />
-              <img src="/avanade.png" alt="Avanade" className="h-6 md:h-7 lg:h-8 w-auto object-contain" />
-              <img src="/avanade.png" alt="Avanade" className="h-6 md:h-7 lg:h-8 w-auto object-contain" />
-              <img src="/avanade.png" alt="Avanade" className="h-6 md:h-7 lg:h-8 w-auto object-contain" />
-              <img src="/avanade.png" alt="Avanade" className="h-6 md:h-7 lg:h-8 w-auto object-contain" />
-              <img src="/avanade.png" alt="Avanade" className="h-6 md:h-7 lg:h-8 w-auto object-contain" />
+              <img src="/morgan.png" alt="morgan" className="h-8 md:h-9 lg:h-10 w-auto object-contain" />
+              <img src="/amtrak.png" alt="amtrak" className="h-3 md:h-3 lg:h-4 w-auto object-contain" />
+              <img src="/accenture.png" alt="accenture" className="h-12 md:h-13 lg:h-15 w-auto object-contain" />
+              <img src="/hcl.png" alt="hcl" className="h-12 md:h-13 lg:h-15 w-auto object-contain" />
+              <img src="/caliber.png" alt="caliber" className="h-6 md:h-7 lg:h-8 w-auto object-contain" />
+              <img src="/wwt.png" alt="wwt" className="h-6 md:h-7 lg:h-8 w-auto object-contain" />
+              <img src="/avanade.png" alt="avanade" className="h-6 md:h-7 lg:h-8 w-auto object-contain" />
             </div>
           </div>
         </div>

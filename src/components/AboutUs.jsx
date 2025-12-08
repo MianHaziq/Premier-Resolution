@@ -5,6 +5,8 @@ import { Play } from "lucide-react";
 export default function AboutUs() {
   const [isVisible, setIsVisible] = useState(false);
   const [countersStarted, setCountersStarted] = useState(false);
+  const [showVideo, setShowVideo] = useState(false);
+
   const sectionRef = useRef(null);
 
   // Statistics data
@@ -68,39 +70,48 @@ export default function AboutUs() {
       <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20 flex flex-col lg:flex-row items-stretch gap-12 lg:gap-16">
 
         {/* LEFT SIDE - VIDEO/IMAGE */}
-        <div
-          className={`relative w-full lg:w-[580px] h-[300px] sm:h-[400px] md:h-[500px] lg:h-[680px] shrink-0 transition-all duration-1000 ease-out ${
-            isVisible
-              ? "opacity-100 translate-x-0"
-              : "opacity-0 -translate-x-20"
-          }`}
-        >
-          {/* Placeholder Image - Replace with video when available */}
-          <img
-            src="/heroImage.jpg"
-            alt="About Premier Resolution"
-            className="w-full h-full object-cover rounded-lg"
-          />
+       {/* LEFT SIDE - VIDEO WITH PLAY OVERLAY */}
+{/* LEFT SIDE - VIDEO ALWAYS VISIBLE AS THUMBNAIL */}
+<div
+  className={`relative w-full lg:w-[580px] h-[300px] sm:h-[400px] md:h-[500px] lg:h-[680px] shrink-0 transition-all duration-1000 ease-out ${
+    isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"
+  }`}
+>
 
-          {/* Uncomment below when video is available and comment out the img tag above */}
-          {/* <video
-            src="/about-video.mp4"
-            className="w-full h-full object-cover"
-            poster="/heroImage.jpg"
-            controls={false}
-          /> */}
+  {/* Video is shown always - paused initially */}
+  <video
+    src="/v1.mp4"
+    ref={(el) => (window.aboutVideo = el)}
+    className="w-full h-full object-cover rounded-lg"
+    controls={showVideo}   // controls only when playing
+    muted                  // allow preview like an image
+    preload="metadata"     // loads first frame
+    onLoadedMetadata={() => {
+      // pause at first frame
+      window.aboutVideo.currentTime = 0.1;
+      window.aboutVideo.pause();
+    }}
+  />
 
-          {/* Play Button Overlay */}
-          <button
-            className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[80px] h-[80px] bg-[#8B7EE0] bg-opacity-80 rounded-full flex items-center justify-center hover:bg-opacity-100 hover:scale-110 active:scale-95 transition-all duration-300 cursor-pointer ${
-              isVisible ? "scale-100" : "scale-0"
-            }`}
-            style={{ transitionDelay: "500ms" }}
-            aria-label="Play video"
-          >
-            <Play className="w-8 h-8 text-white fill-white ml-1" />
-          </button>
-        </div>
+  {/* Play Button (only before clicking) */}
+  {!showVideo && (
+    <button
+      onClick={() => {
+        setShowVideo(true);
+        window.aboutVideo.muted = false;       // enable audio
+        window.aboutVideo.play();              // start video
+      }}
+      className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+      w-[80px] h-[80px] bg-[#8B7EE0] bg-opacity-80 rounded-full 
+      flex items-center justify-center hover:bg-opacity-100 
+      hover:scale-110 active:scale-95 transition-all duration-300 cursor-pointer"
+    >
+      <Play className="w-8 h-8 text-white fill-white ml-1" />
+    </button>
+  )}
+
+</div>
+
 
         {/* RIGHT SIDE - CONTENT */}
         <div className="flex flex-col justify-center flex-1 py-4 lg:py-8">

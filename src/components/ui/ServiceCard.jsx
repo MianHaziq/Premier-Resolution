@@ -60,20 +60,7 @@ export default function ServiceCard({ icon, title, description, index = 0, isVis
       </p>
 
       {/* Always visible on mobile, hover reveal on desktop */}
-      <div className="mt-auto flex items-center gap-2 opacity-100 translate-x-0 md:opacity-0 md:translate-x-[-10px] md:group-hover:opacity-100 md:group-hover:translate-x-0 transition-all duration-300">
-        <span className="text-[14px] font-medium text-[#0B9444]">Learn more</span>
-        <svg
-          width="16"
-          height="16"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="#0B9444"
-          strokeWidth="2"
-          className="transform group-hover:translate-x-1 transition-transform duration-300"
-        >
-          <path d="M5 12h14M12 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round"/>
-        </svg>
-      </div>
+  
     </div>
   );
 }
