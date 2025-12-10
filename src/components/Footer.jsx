@@ -28,11 +28,12 @@ const LinkedInIcon = () => (
 
 // Services links
 const services = [
-  { name: "Email Support", path: "/services/email-support" },
-  { name: "Chat Support", path: "/services/live-chat-support" },
-  { name: "Debt Collection", path: "/services/debt-collection" },
-  { name: "Call center Solutions", path: "/services/customer-services" },
-  { name: "Business Management", path: "/services/bpo-operations" },
+  { name: "Debt Collection Services", path: "/services/debt-collection" },
+  { name: "Email Marketing Solutions", path: "/services/email-support" },
+  { name: "AI Chatbot Automation 24/7", path: "/services/ai-chatbot" },
+  { name: "Business Management Support", path: "/services/business-management" },
+  { name: "Call Center & Business Solutions", path: "/services/customer-services" },
+  { name: "Live Chat & Customer Support", path: "/services/live-chat-support" },
 ];
 
 export default function Footer() {

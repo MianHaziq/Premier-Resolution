@@ -1,5 +1,5 @@
 // ServicesSection.jsx
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import ServiceCard from "./ui/ServiceCard";
 
 /* Inline SVG icons so copying the file works immediately */
@@ -55,37 +55,37 @@ const SERVICES = [
     icon: <IconCode />,
     title: "Debt Collection Services",
     description:
-      "We deliver ethical, respectful, and result-oriented debt recovery for businesses of all sizes. Our trained agents maximize recovery rates while safeguarding your customer relationships.",
-  },
-  {
-    icon: <IconGears />,
-    title: "Customer Services",
-    description:
-      "Premiere Resolution provides seamless inbound and outbound customer communication. Our agents ensure every interaction is professional, timely, and customer-focused.",
-  },
-  {
-    icon: <IconSales />,
-    title: "Sales Services",
-    description:
-      "We help businesses drive revenue with expert sales support. Our team specializes in lead generation, outbound campaigns, and appointment setting.",
+      "Recover payments quickly and professionally with compliant, customer-friendly recovery team.",
   },
   {
     icon: <IconGlobe />,
-    title: "Email Support",
+    title: "Email Marketing Solutions",
     description:
-      "Our email specialists respond quickly with accurate, clear, and professional communication. We help maintain a strong, reliable digital presence.",
+      "Engage customers with targeted campaigns designed to boost conversions and brand loyalty.",
   },
   {
-    icon: <IconChat />,
-    title: "Live Chat Support",
+    icon: <IconGears />,
+    title: "AI Chatbot Automation 24/7",
     description:
-      "We offer real-time chat support that resolves queries instantly and improves user experience across digital channels.",
+      "Provide instant, 24/7 responses with intelligent chatbots that reduce workload and improve support.",
   },
   {
     icon: <IconBPO />,
-    title: "BPO Operations",
+    title: "Business Management Support",
     description:
-      "We deliver scalable, reliable BPO operations that streamline business processes and boost efficiency. Our expert teams handle customer communication.",
+      "Streamline operations, improve efficiency, and keep your business running smoothly and best.",
+  },
+  {
+    icon: <IconSales />,
+    title: "Call Center & Business Solutions",
+    description:
+      "Professional inbound and outbound support tailored to enhance customer experience.",
+  },
+  {
+    icon: <IconChat />,
+    title: "Live Chat & Customer Support",
+    description:
+      "Provide real-time assistance when customers need it most. Keep satisfaction support team.",
   },
 ];
 

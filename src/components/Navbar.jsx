@@ -7,51 +7,51 @@ import {
   Mail,
   Banknote,
   Headphones,
-  TrendingUp,
   MessageCircle,
   Building2,
   ArrowRight,
   Mail as MailIcon,
+  Bot,
 } from "lucide-react";
 import BookButton from "./ui/BookButton";
 
 // Services data with icons and routes
 const services = [
   {
-    name: "Debt Collection",
+    name: "Debt Collection Services",
     path: "/services/debt-collection",
     icon: Banknote,
-    description: "Ethical debt recovery solutions",
+    description: "Customer-friendly recovery team",
   },
   {
-    name: "Customer Services",
-    path: "/services/customer-services",
-    icon: Headphones,
-    description: "Professional support teams",
-  },
-  {
-    name: "Sales Services",
-    path: "/services/sales-services",
-    icon: TrendingUp,
-    description: "Drive revenue growth",
-  },
-  {
-    name: "Email Support",
+    name: "Email Marketing Solutions",
     path: "/services/email-support",
     icon: MailIcon,
-    description: "Quick & accurate responses",
+    description: "Boost conversions & loyalty",
   },
   {
-    name: "Live Chat Support",
+    name: "AI Chatbot Automation 24/7",
+    path: "/services/ai-chatbot",
+    icon: Bot,
+    description: "Instant intelligent responses",
+  },
+  {
+    name: "Business Management Support",
+    path: "/services/business-management",
+    icon: Building2,
+    description: "Streamline operations",
+  },
+  {
+    name: "Call Center & Business Solutions",
+    path: "/services/customer-services",
+    icon: Headphones,
+    description: "Inbound & outbound support",
+  },
+  {
+    name: "Live Chat & Customer Support",
     path: "/services/live-chat-support",
     icon: MessageCircle,
     description: "Real-time assistance",
-  },
-  {
-    name: "BPO Operations",
-    path: "/services/bpo-operations",
-    icon: Building2,
-    description: "Scalable business processes",
   },
 ];
 

@@ -14,10 +14,8 @@ import ContactPage from './pages/ContactPage'
 // Service Pages
 import DebtCollectionPage from './pages/services/DebtCollectionPage'
 import CustomerServicesPage from './pages/services/CustomerServicesPage'
-import SalesServicesPage from './pages/services/SalesServicesPage'
 import EmailSupportPage from './pages/services/EmailSupportPage'
 import LiveChatSupportPage from './pages/services/LiveChatSupportPage'
-import BPOOperationsPage from './pages/services/BPOOperationsPage'
 import AIChatbotPage from './pages/services/AIChatbotPage'
 import BusinessManagementPage from './pages/services/BusinessManagementPage'
 
@@ -40,13 +38,11 @@ function App() {
 
         {/* Individual Service Pages */}
         <Route path="/services/debt-collection" element={<DebtCollectionPage />} />
-        <Route path="/services/customer-services" element={<CustomerServicesPage />} />
-        <Route path="/services/sales-services" element={<SalesServicesPage />} />
         <Route path="/services/email-support" element={<EmailSupportPage />} />
-        <Route path="/services/live-chat-support" element={<LiveChatSupportPage />} />
-        <Route path="/services/bpo-operations" element={<BPOOperationsPage />} />
         <Route path="/services/ai-chatbot" element={<AIChatbotPage />} />
         <Route path="/services/business-management" element={<BusinessManagementPage />} />
+        <Route path="/services/customer-services" element={<CustomerServicesPage />} />
+        <Route path="/services/live-chat-support" element={<LiveChatSupportPage />} />
       </Routes>
       <Footer />
     </ToastProvider>
