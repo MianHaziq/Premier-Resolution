@@ -49,19 +49,19 @@ const IconBPO = () => (
   </svg>
 );
 
-/* Data array matching the six cards in the image */
+/* Data array matching the six services */
 const SERVICES = [
   {
     icon: <IconCode />,
     title: "Debt Collection Services",
     description:
-      "Recover payments quickly and professionally with compliant, customer-friendly recovery team.",
+      "Recover payments quickly and professionally with our compliant, customer-friendly recovery team.",
   },
   {
     icon: <IconGlobe />,
     title: "Email Marketing Solutions",
     description:
-      "Engage customers with targeted campaigns designed to boost conversions and brand loyalty.",
+      "Engage customers with targeted campaigns that boost conversions and build lasting brand loyalty.",
   },
   {
     icon: <IconGears />,
@@ -73,7 +73,7 @@ const SERVICES = [
     icon: <IconBPO />,
     title: "Business Management Support",
     description:
-      "Streamline operations, improve efficiency, and keep your business running smoothly and best.",
+      "Streamline operations, improve efficiency, and keep your business running smoothly.",
   },
   {
     icon: <IconSales />,
@@ -85,7 +85,7 @@ const SERVICES = [
     icon: <IconChat />,
     title: "Live Chat & Customer Support",
     description:
-      "Provide real-time assistance when customers need it most. Keep satisfaction support team.",
+      "Provide real-time assistance when customers need it most with 87% satisfaction ratings.",
   },
 ];
 
