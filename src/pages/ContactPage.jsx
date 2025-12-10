@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Clock, Send, User, MessageSquare } from "lucide-react";
 import { useToast } from "../components/ui/Toast";
 import PageHeader from "../components/ui/PageHeader";
@@ -445,18 +446,18 @@ export default function ContactPage() {
             Partner with Premiere Resolutions and experience the difference that dedicated, professional service can make.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="/services"
+            <Link
+              to="/services"
               className="inline-flex items-center justify-center gap-2 bg-[#0B9444] text-white px-8 py-4 rounded-xl font-semibold text-[15px] hover:bg-[#0a8840] transition-colors"
             >
               Explore Our Services
-            </a>
-            <a
-              href="/about"
+            </Link>
+            <Link
+              to="/about"
               className="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-[#0B9444] text-[#0B9444] px-8 py-4 rounded-xl font-semibold text-[15px] hover:bg-[#0B9444] hover:text-white transition-colors"
             >
               Learn About Us
-            </a>
+            </Link>
           </div>
         </div>
       </section>
