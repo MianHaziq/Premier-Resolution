@@ -115,7 +115,7 @@ export default function TestimonialsSection() {
 
           {/* Header Row - Left heading, Right arrows */}
           <div
-            className={`flex items-end justify-between mb-10 md:mb-12 transition-all duration-700 ease-out ${
+            className={`flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 sm:gap-0 mb-8 sm:mb-10 md:mb-12 transition-all duration-700 ease-out ${
               isVisible
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-8"
@@ -123,14 +123,14 @@ export default function TestimonialsSection() {
           >
             {/* Left - Heading */}
             <div>
-              <p className="text-[16px] text-[#6B7280] mb-2">
+              <p className="text-[14px] sm:text-[16px] text-[#6B7280] mb-1 sm:mb-2">
                 <span className="italic text-[#0B9444] relative">
                   What
                   <span className="absolute left-0 right-0 bottom-0 h-[2px] bg-[#0B9444]" />
                 </span>
                 <span className="italic"> Our Clients Say</span>
               </p>
-              <h2 className="text-[32px] md:text-[40px] lg:text-[44px] 2xl:text-[48px] font-bold text-[#1a1a1a] leading-tight">
+              <h2 className="text-[28px] sm:text-[32px] md:text-[40px] lg:text-[44px] 2xl:text-[48px] font-bold text-[#1a1a1a] leading-tight">
                 Testimonials
               </h2>
             </div>
@@ -140,7 +140,7 @@ export default function TestimonialsSection() {
               <button
                 onClick={handlePrev}
                 disabled={currentIndex === 0}
-                className={`w-11 h-11 md:w-12 md:h-12 rounded-lg flex items-center justify-center transition-all duration-300 bg-white shadow-md ${
+                className={`w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-lg flex items-center justify-center transition-all duration-300 bg-white shadow-md ${
                   currentIndex === 0
                     ? "opacity-50 cursor-not-allowed"
                     : "hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0"
@@ -148,14 +148,14 @@ export default function TestimonialsSection() {
                 aria-label="Previous testimonial"
               >
                 <ChevronLeft
-                  size={22}
-                  className="text-[#0B9444]"
+                  size={20}
+                  className="text-[#0B9444] sm:w-[22px] sm:h-[22px]"
                 />
               </button>
               <button
                 onClick={handleNext}
                 disabled={currentIndex >= maxIndex}
-                className={`w-11 h-11 md:w-12 md:h-12 rounded-lg flex items-center justify-center transition-all duration-300 bg-white shadow-md ${
+                className={`w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-lg flex items-center justify-center transition-all duration-300 bg-white shadow-md ${
                   currentIndex >= maxIndex
                     ? "opacity-50 cursor-not-allowed"
                     : "hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0"
@@ -163,8 +163,8 @@ export default function TestimonialsSection() {
                 aria-label="Next testimonial"
               >
                 <ChevronRight
-                  size={22}
-                  className="text-[#0B9444]"
+                  size={20}
+                  className="text-[#0B9444] sm:w-[22px] sm:h-[22px]"
                 />
               </button>
             </div>

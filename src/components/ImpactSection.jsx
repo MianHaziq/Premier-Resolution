@@ -28,18 +28,18 @@ export default function ImpactSection() {
     <section className="bg-[#FAFAFB] py-16 md:py-20 lg:py-24">
       <div className="max-w-[1440px] 2xl:max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20 2xl:px-24">
         {/* Header */}
-        <div className="text-center mb-12 md:mb-16">
+        <div className="text-center mb-10 sm:mb-12 md:mb-16">
           {/* Title */}
-          <h2 className="text-[32px] md:text-[40px] lg:text-[48px] 2xl:text-[52px] font-bold text-[#1a1a1a] mb-4 md:mb-6">
+          <h2 className="text-[26px] sm:text-[32px] md:text-[40px] lg:text-[48px] 2xl:text-[52px] font-bold text-[#1a1a1a] mb-3 sm:mb-4 md:mb-6">
             <span className="relative inline-block">
               Driving
-              <span className="absolute left-0 right-0 bottom-1 md:bottom-2 h-[3px] md:h-[4px] bg-[#0B9444]" />
+              <span className="absolute left-0 right-0 bottom-0.5 sm:bottom-1 md:bottom-2 h-[2px] sm:h-[3px] md:h-[4px] bg-[#0B9444]" />
             </span>{" "}
             Measurable Impact
           </h2>
 
           {/* Subtitle */}
-          <p className="text-[14px] md:text-[15px] lg:text-[16px] text-[#6B7280] max-w-[800px] mx-auto leading-relaxed">
+          <p className="text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] text-[#6B7280] max-w-[800px] mx-auto leading-relaxed px-2 sm:px-0">
             Built for companies that need more than promises—we deliver proven strategies, skilled agents, and measurable outcomes that truly impact your bottom line.
           </p>
         </div>

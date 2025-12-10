@@ -126,17 +126,17 @@ export default function AwardsSection() {
                   : "opacity-0 translate-y-8"
               }`}
             >
-              <p className="text-[16px] text-[#6B7280] mb-2">
+              <p className="text-[14px] sm:text-[16px] text-[#6B7280] mb-1 sm:mb-2">
                 <span className="italic text-[#0B9444] relative">
                   Recognized
                   <span className="absolute left-0 right-0 bottom-0 h-[2px] bg-[#0B9444]" />
                 </span>
                 <span className="italic"> for Excellence</span>
               </p>
-              <h2 className="text-[32px] md:text-[40px] lg:text-[44px] 2xl:text-[48px] font-bold text-[#1a1a1a] leading-tight mb-4">
+              <h2 className="text-[28px] sm:text-[32px] md:text-[40px] lg:text-[44px] 2xl:text-[48px] font-bold text-[#1a1a1a] leading-tight mb-3 sm:mb-4">
                 Awards & Achievements
               </h2>
-              <p className="text-[15px] md:text-[16px] 2xl:text-[17px] text-[#6B7280] leading-relaxed max-w-[460px] 2xl:max-w-[520px]">
+              <p className="text-[14px] sm:text-[15px] md:text-[16px] 2xl:text-[17px] text-[#6B7280] leading-relaxed max-w-[460px] 2xl:max-w-[520px]">
                 Our dedication to quality, performance, and customer satisfaction has
                 earned us recognition from industry leaders and clients worldwide.
               </p>

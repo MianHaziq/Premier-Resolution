@@ -169,15 +169,15 @@ export default function FAQSection({ data }) {
           {/* Left Side - Title Section */}
           <div className="lg:w-[340px] xl:w-[380px] flex-shrink-0">
             {/* Green accent bar */}
-            <div className="w-12 sm:w-14 h-[4px] bg-[#0B9444] mb-6 sm:mb-8" />
+            <div className="w-10 sm:w-12 md:w-14 h-[3px] sm:h-[4px] bg-[#0B9444] mb-4 sm:mb-6 md:mb-8" />
 
             {/* Main heading */}
-            <h2 className="text-[32px] sm:text-[38px] md:text-[42px] lg:text-[46px] font-bold text-[#1a1a1a] leading-[1.1] mb-5 sm:mb-6">
+            <h2 className="text-[26px] sm:text-[32px] md:text-[38px] lg:text-[42px] xl:text-[46px] font-bold text-[#1a1a1a] leading-[1.15] sm:leading-[1.1] mb-3 sm:mb-5 md:mb-6">
               {faqData.title}
             </h2>
 
             {/* Subtitle */}
-            <p className="text-[15px] sm:text-[16px] text-[#6B7280] leading-relaxed max-w-[320px]">
+            <p className="text-[13px] sm:text-[15px] md:text-[16px] text-[#6B7280] leading-relaxed max-w-[280px] sm:max-w-[320px]">
               {faqData.subtitle}
             </p>
           </div>

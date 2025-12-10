@@ -114,9 +114,9 @@ export default function ServicesSection() {
     <section ref={sectionRef} className="w-full bg-[#FAFAFB] py-16 px-6 md:px-12 lg:px-20 overflow-hidden">
       <div className="max-w-[1440px] mx-auto">
         {/* Header with animation */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-8 sm:mb-10 md:mb-12">
           <h2
-            className={`text-[28px] md:text-[34px] leading-[40px] font-extrabold text-[#0F172A] transition-all duration-700 ease-out ${
+            className={`text-[22px] sm:text-[26px] md:text-[32px] lg:text-[34px] leading-[1.3] sm:leading-[1.25] font-extrabold text-[#0F172A] transition-all duration-700 ease-out ${
               isVisible
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-8"
@@ -126,7 +126,7 @@ export default function ServicesSection() {
             <span className="relative">
               <span className="relative z-10">Powered by Premiere Resolutions</span>
               <span
-                className={`absolute left-0 right-0 bottom-0 h-[4px] bg-[#20A871] rounded-full transition-all duration-700 delay-500 ${
+                className={`absolute left-0 right-0 bottom-0 h-[3px] sm:h-[4px] bg-[#20A871] rounded-full transition-all duration-700 delay-500 ${
                   isVisible ? "scale-x-100" : "scale-x-0"
                 }`}
                 style={{ transformOrigin: "left" }}
@@ -134,7 +134,7 @@ export default function ServicesSection() {
             </span>
           </h2>
           <p
-            className={`text-[14px] md:text-[16px] text-[#6B7280] mt-4 max-w-[720px] mx-auto transition-all duration-700 delay-200 ease-out ${
+            className={`text-[13px] sm:text-[14px] md:text-[16px] text-[#6B7280] mt-3 sm:mt-4 max-w-[720px] mx-auto transition-all duration-700 delay-200 ease-out px-2 sm:px-0 ${
               isVisible
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-8"
