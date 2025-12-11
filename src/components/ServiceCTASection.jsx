@@ -19,7 +19,7 @@ export default function ServiceCTASection({
   ctaText = "Get Your Free Consultation Today",
   buttonText = "Start Collection",
   buttonLink = "/contact",
-  image = "/heroImage.jpg",
+  image = "/liveChat.png",
   imageAlt = "Customer support representative",
 }) {
   return (

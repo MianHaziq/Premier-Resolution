@@ -1,13 +1,12 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Play } from "lucide-react";
 import PageHeader from "../components/ui/PageHeader";
 
 // Services data
 const services = [
   {
     id: 1,
-    image: "/heroImage.jpg",
+    image: "/debt.png",
     title: "Debt Collection Services",
     description:
       "Recover payments quickly and professionally with compliant, customer-friendly recovery team.",
@@ -15,7 +14,7 @@ const services = [
   },
   {
     id: 2,
-    image: "/heroImage.jpg",
+    image: "/email.png",
     title: "Email Marketing Solutions",
     description:
       "Engage customers with targeted campaigns designed to boost conversions and brand loyalty.",
@@ -23,7 +22,7 @@ const services = [
   },
   {
     id: 3,
-    image: "/heroImage.jpg",
+    image: "/aiChatbot.png",
     title: "AI Chatbot Automation 24/7",
     description:
       "Provide instant, 24/7 responses with intelligent chatbots that reduce workload and improve support.",
@@ -31,7 +30,7 @@ const services = [
   },
   {
     id: 4,
-    image: "/heroImage.jpg",
+    image: "/bm.png",
     title: "Business Management Support",
     description:
       "Streamline operations, improve efficiency, and keep your business running smoothly and best.",
@@ -39,7 +38,7 @@ const services = [
   },
   {
     id: 5,
-    image: "/heroImage.jpg",
+    image: "/callSupport.png",
     title: "Call Center & Business Solutions",
     description:
       "Professional inbound and outbound support tailored to enhance customer experience.",
@@ -47,7 +46,7 @@ const services = [
   },
   {
     id: 6,
-    image: "/heroImage.jpg",
+    image: "/liveChat.png",
     title: "Live Chat & Customer Support",
     description:
       "Provide real-time assistance when customers need it most. Keep satisfaction support team.",
@@ -59,21 +58,21 @@ const services = [
 const realStories = [
   {
     id: 1,
-    image: "/heroImage.jpg",
+    youtubeId: "GNZBSZD16cY",
     quote:
       "Working with Premiere Resolutions has transformed our customer engagement. Their team is highly responsive and always professional.",
     author: "Emily Jack",
   },
   {
     id: 2,
-    image: "/heroImage.jpg",
+    youtubeId: "LnJwH_PZXnM",
     quote:
       "Their debt recovery support helped us improve payment collection without damaging client relationships. Highly recommended.",
     author: "Jake Lawson",
   },
   {
     id: 3,
-    image: "/heroImage.jpg",
+    youtubeId: "lXZ5Bo5lafA",
     quote:
       "Professional, consistent, and reliable. Their call center team has become an extension of our own company.",
     author: "Nancy Nelon",
@@ -156,22 +155,14 @@ export default function ServicesPage() {
                 key={story.id}
                 className="relative rounded-[20px] overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
               >
-                {/* Image - Full card */}
-                <img
-                  src={story.image}
-                  alt={story.author}
-                  className="w-full h-[480px] md:h-[520px] lg:h-[540px] 2xl:h-[580px] object-cover"
+                {/* YouTube Video Embed */}
+                <iframe
+                  src={`https://www.youtube.com/embed/${story.youtubeId}`}
+                  title={`${story.author}'s testimonial`}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-[480px] md:h-[520px] lg:h-[540px] 2xl:h-[580px]"
                 />
-
-                {/* Play Button - Upper middle */}
-                <div className="absolute top-[30%] left-1/2 -translate-x-1/2 -translate-y-1/2">
-                  <button className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center shadow-md hover:bg-white hover:scale-110 transition-all duration-300">
-                    <Play
-                      size={20}
-                      className="text-[#1a1a1a] fill-[#1a1a1a] ml-0.5"
-                    />
-                  </button>
-                </div>
 
                 {/* White Gradient Fade from bottom */}
                 <div className="absolute bottom-0 left-0 right-0 h-[55%] bg-linear-to-t from-white via-white/90 to-transparent" />

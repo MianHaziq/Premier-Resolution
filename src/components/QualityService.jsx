@@ -5,17 +5,17 @@ import { ChevronLeft, ChevronRight, Check } from "lucide-react";
 const SERVICES_DATA = [
   {
     id: 1,
-    image: "/heroImage.jpg",
-    title: "Debt Collection",
+    image: "/debt.png",
+    title: "Debt Collection Services",
     description:
-      "End-to-end recovery campaigns tailored to increase your collection rate without affecting customer relationships.",
+      "Recover payments quickly and professionally with our compliant, customer-friendly recovery team.",
     features: [
       { icon: "monitoring", text: "Real-time monitoring" },
       { icon: "support", text: "24/7 Support Availability" },
       { icon: "success", text: "Excellent Success Rate" },
       { icon: "reporting", text: "Automated reporting" },
-      { icon: "collection", text: "Debt Collection" },
-      { icon: "call", text: "Call Centre Solution" },
+      { icon: "collection", text: "Compliant Recovery" },
+      { icon: "call", text: "Professional Agents" },
     ],
     qualityTitle: "Our quality service",
     qualityDescription:
@@ -23,10 +23,64 @@ const SERVICES_DATA = [
   },
   {
     id: 2,
-    image: "/heroImage.jpg",
-    title: "Customer Services",
+    image: "/email.png",
+    title: "Email Marketing Solutions",
     description:
-      "Professional inbound and outbound customer communication that ensures every interaction is timely and customer-focused.",
+      "Engage customers with targeted campaigns that boost conversions and build lasting brand loyalty.",
+    features: [
+      { icon: "monitoring", text: "Campaign Analytics" },
+      { icon: "reporting", text: "A/B Testing" },
+      { icon: "success", text: "High Open Rates" },
+      { icon: "support", text: "Audience Segmentation" },
+      { icon: "call", text: "Automated Workflows" },
+      { icon: "collection", text: "Lead Nurturing" },
+    ],
+    qualityTitle: "Professional communication",
+    qualityDescription:
+      "Expert email marketing that maintains your brand voice and drives conversions. Our team creates targeted campaigns that engage customers and deliver measurable ROI.",
+  },
+  {
+    id: 3,
+    image: "/aiChatbot.png",
+    title: "AI Chatbot Automation 24/7",
+    description:
+      "Provide instant, 24/7 responses with intelligent chatbots that reduce workload and improve support.",
+    features: [
+      { icon: "monitoring", text: "24/7 Availability" },
+      { icon: "support", text: "Instant Responses" },
+      { icon: "success", text: "Smart AI Learning" },
+      { icon: "reporting", text: "Conversation Analytics" },
+      { icon: "call", text: "Multi-language Support" },
+      { icon: "collection", text: "Seamless Handoff" },
+    ],
+    qualityTitle: "Intelligent automation",
+    qualityDescription:
+      "Advanced AI chatbots that provide instant customer support around the clock. Our intelligent automation reduces workload while maintaining high-quality customer interactions.",
+  },
+  {
+    id: 4,
+    image: "/bm.png",
+    title: "Business Management Support",
+    description:
+      "Streamline operations, improve efficiency, and keep your business running smoothly.",
+    features: [
+      { icon: "success", text: "Process Optimization" },
+      { icon: "monitoring", text: "Quality Control" },
+      { icon: "reporting", text: "Cost Efficiency" },
+      { icon: "support", text: "Scalable Solutions" },
+      { icon: "call", text: "Dedicated Teams" },
+      { icon: "collection", text: "Business Growth" },
+    ],
+    qualityTitle: "Operational excellence",
+    qualityDescription:
+      "Comprehensive business management solutions that optimize your operations. We handle complex processes efficiently, allowing you to focus on core business growth.",
+  },
+  {
+    id: 5,
+    image: "/callSupport.png",
+    title: "Call Center & Business Solutions",
+    description:
+      "Professional inbound and outbound support tailored to enhance customer experience.",
     features: [
       { icon: "support", text: "Multi-channel Support" },
       { icon: "monitoring", text: "Quality Assurance" },
@@ -40,47 +94,11 @@ const SERVICES_DATA = [
       "Dedicated support teams ensuring every customer interaction is handled with care and professionalism. We prioritize customer satisfaction through trained agents and streamlined processes.",
   },
   {
-    id: 3,
-    image: "/heroImage.jpg",
-    title: "Sales Services",
+    id: 6,
+    image: "/liveChat.png",
+    title: "Live Chat & Customer Support",
     description:
-      "Expert sales support including lead generation, outbound campaigns, and appointment setting to drive your revenue.",
-    features: [
-      { icon: "success", text: "Lead Generation" },
-      { icon: "call", text: "Outbound Campaigns" },
-      { icon: "monitoring", text: "Pipeline Management" },
-      { icon: "reporting", text: "Sales Analytics" },
-      { icon: "support", text: "Appointment Setting" },
-      { icon: "collection", text: "Revenue Growth" },
-    ],
-    qualityTitle: "Revenue-driven solutions",
-    qualityDescription:
-      "Strategic sales support designed to maximize your revenue potential. Our experienced sales teams execute targeted campaigns that convert prospects into loyal customers.",
-  },
-  {
-    id: 4,
-    image: "/heroImage.jpg",
-    title: "Email Support",
-    description:
-      "Quick and accurate email responses with professional communication to maintain a strong digital presence.",
-    features: [
-      { icon: "monitoring", text: "Fast Response Time" },
-      { icon: "reporting", text: "Email Templates" },
-      { icon: "success", text: "High Resolution Rate" },
-      { icon: "support", text: "Ticket Management" },
-      { icon: "call", text: "Follow-up System" },
-      { icon: "collection", text: "Brand Consistency" },
-    ],
-    qualityTitle: "Professional communication",
-    qualityDescription:
-      "Expert email handling that maintains your brand voice and ensures timely, accurate responses. Our team manages high volumes while maintaining quality and consistency.",
-  },
-  {
-    id: 5,
-    image: "/heroImage.jpg",
-    title: "Live Chat Support",
-    description:
-      "Real-time chat support that resolves queries instantly and improves user experience across digital channels.",
+      "Provide real-time assistance when customers need it most with high satisfaction ratings.",
     features: [
       { icon: "monitoring", text: "Instant Response" },
       { icon: "support", text: "24/7 Availability" },
@@ -92,24 +110,6 @@ const SERVICES_DATA = [
     qualityTitle: "Real-time engagement",
     qualityDescription:
       "Instant customer engagement through live chat solutions. Our agents provide immediate assistance, improving customer satisfaction and reducing response times significantly.",
-  },
-  {
-    id: 6,
-    image: "/heroImage.jpg",
-    title: "BPO Operations",
-    description:
-      "Scalable and reliable BPO operations that streamline business processes and boost overall efficiency.",
-    features: [
-      { icon: "success", text: "Process Optimization" },
-      { icon: "monitoring", text: "Quality Control" },
-      { icon: "reporting", text: "Cost Efficiency" },
-      { icon: "support", text: "Scalable Solutions" },
-      { icon: "call", text: "Dedicated Teams" },
-      { icon: "collection", text: "Business Growth" },
-    ],
-    qualityTitle: "Operational excellence",
-    qualityDescription:
-      "Comprehensive BPO solutions that optimize your business operations. We handle complex processes efficiently, allowing you to focus on core business growth.",
   },
 ];
 

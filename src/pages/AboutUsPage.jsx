@@ -1,25 +1,25 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { Headphones, Banknote, MessageCircle, Mail, Play, Check } from "lucide-react";
+import { Headphones, Banknote, MessageCircle, Mail, Check } from "lucide-react";
 import PageHeader from "../components/ui/PageHeader";
 
 // Real Stories data
 const realStories = [
   {
     id: 1,
-    video: "v1.mp4",
+    youtubeId: "GNZBSZD16cY",
     quote: "Working with Premiere Resolutions has transformed our customer engagement. Their team is highly responsive and always professional.",
     author: "Emily Jack",
   },
   {
     id: 2,
-video: "v1.mp4",
+    youtubeId: "LnJwH_PZXnM",
     quote: "Their debt recovery support helped us improve payment collection without damaging client relationships. Highly recommended.",
     author: "Jake Lawson",
   },
   {
     id: 3,
-    video: "v1.mp4",
+    youtubeId: "lXZ5Bo5lafA",
     quote: "Professional, consistent, and reliable. Their call center team has become an extension of our own company.",
     author: "Nancy Nelon",
   },
@@ -117,16 +117,6 @@ export default function AboutUsPage() {
   const [statsVisible, setStatsVisible] = useState(false);
   const cardsRef = useRef(null);
   const statsRef = useRef(null);
-  const [activeVideo, setActiveVideo] = useState(null);
-  const videoRefs = useRef([]);
-  
-  useEffect(() => {
-    videoRefs.current.forEach((video, index) => {
-      if (!video) return;
-      if (activeVideo === index) video.play();
-      else video.pause();
-    });
-  }, [activeVideo]);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -180,7 +170,7 @@ export default function AboutUsPage() {
         {/* Office Image */}
         <div className="w-full">
           <img
-            src="/ourOffice.jpg"
+            src="/call-center.png"
             alt="Our Office"
             className="w-full h-[200px] sm:h-[300px] md:h-[450px] lg:h-[550px] 2xl:h-[600px] object-cover"
           />
@@ -308,7 +298,7 @@ export default function AboutUsPage() {
             {/* Right - Image */}
             <div className="order-1 lg:order-2">
               <img
-                src="/heroImage.jpg"
+                src="/meet-room.jpg"
                 alt="Our Team"
                 className="w-full h-[220px] sm:h-[280px] md:h-[400px] lg:h-[450px] 2xl:h-[500px] object-cover"
               />
@@ -388,7 +378,7 @@ export default function AboutUsPage() {
                 {/* Left - Image */}
                 <div className="lg:w-[38%]">
                   <img
-                    src="/heroImage.jpg"
+                    src="/hassann.jpg"
                     alt="Hassan Sarfaraz"
                     className="w-full h-[280px] p-5 md:h-[380px] lg:h-full min-h-[400px] lg:min-h-[480px] object-cover"
                   />
@@ -460,36 +450,14 @@ export default function AboutUsPage() {
                 key={story.id}
                 className="relative rounded-[20px] overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
               >
-                {/* Image - Full card */}
-                {/* <img
-                  src={story.image}
-                  alt={story.author}
-                  className="w-full h-[320px] sm:h-[400px] md:h-[480px] lg:h-[540px] 2xl:h-[580px] object-cover"
-                /> */}
-       <video
-            src={story.video}
-            ref={(el) => (activeVideo === story.id ? el?.play() : el?.pause())}
-            controls={activeVideo === story.id}   // Show controls only if playing
-            className="w-full h-[320px] sm:h-[400px] md:h-[480px] lg:h-[540px] 2xl:h-[580px] object-cover"
-          />
-
-          {/* Play button shown only when not active */}
-          {activeVideo !== story.id && (
-            <div className="absolute top-[30%] left-1/2 -translate-x-1/2 -translate-y-1/2">
-              <button
-                onClick={() => setActiveVideo(story.id)}
-                className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center shadow-md hover:bg-white hover:scale-110 transition-all duration-300"
-              >
-                <Play size={22} className="text-[#1a1a1a]" />
-              </button>
-            </div>
-          )}
-                {/* Play Button - Upper middle */}
-                {/* <div className="absolute top-[30%] left-1/2 -translate-x-1/2 -translate-y-1/2">
-                  <button className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center shadow-md hover:bg-white hover:scale-110 transition-all duration-300">
-                    <Play size={20} className="text-[#1a1a1a] fill-[#1a1a1a] ml-0.5" />
-                  </button>
-                </div> */}
+                {/* YouTube Video Embed */}
+                <iframe
+                  src={`https://www.youtube.com/embed/${story.youtubeId}`}
+                  title={`${story.author}'s testimonial`}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-[320px] sm:h-[400px] md:h-[480px] lg:h-[540px] 2xl:h-[580px]"
+                />
 
                 {/* White Gradient Fade from bottom */}
                 <div className="absolute bottom-0 left-0 right-0 h-[55%] bg-linear-to-t from-white via-white/90 to-transparent" />

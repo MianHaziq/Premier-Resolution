@@ -1,11 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { Play } from "lucide-react";
 
 export default function AboutUs() {
   const [isVisible, setIsVisible] = useState(false);
   const [countersStarted, setCountersStarted] = useState(false);
-  const [showVideo, setShowVideo] = useState(false);
 
   const sectionRef = useRef(null);
 
@@ -69,48 +67,18 @@ export default function AboutUs() {
     <section ref={sectionRef} className="w-full bg-white py-20 overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-20 flex flex-col lg:flex-row items-stretch gap-12 lg:gap-16">
 
-        {/* LEFT SIDE - VIDEO/IMAGE */}
-       {/* LEFT SIDE - VIDEO WITH PLAY OVERLAY */}
-{/* LEFT SIDE - VIDEO ALWAYS VISIBLE AS THUMBNAIL */}
-<div
-  className={`relative w-full lg:w-[580px] h-[300px] sm:h-[400px] md:h-[500px] lg:h-[680px] shrink-0 transition-all duration-1000 ease-out ${
-    isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"
-  }`}
->
-
-  {/* Video is shown always - paused initially */}
-  <video
-    src="/v1.mp4"
-    ref={(el) => (window.aboutVideo = el)}
-    className="w-full h-full object-cover rounded-lg"
-    controls={showVideo}   // controls only when playing
-    muted                  // allow preview like an image
-    preload="metadata"     // loads first frame
-    onLoadedMetadata={() => {
-      // pause at first frame
-      window.aboutVideo.currentTime = 0.1;
-      window.aboutVideo.pause();
-    }}
-  />
-
-  {/* Play Button (only before clicking) */}
-  {!showVideo && (
-    <button
-      onClick={() => {
-        setShowVideo(true);
-        window.aboutVideo.muted = false;       // enable audio
-        window.aboutVideo.play();              // start video
-      }}
-      className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-      w-[80px] h-[80px] bg-[#8B7EE0] bg-opacity-80 rounded-full 
-      flex items-center justify-center hover:bg-opacity-100 
-      hover:scale-110 active:scale-95 transition-all duration-300 cursor-pointer"
-    >
-      <Play className="w-8 h-8 text-white fill-white ml-1" />
-    </button>
-  )}
-
-</div>
+        {/* LEFT SIDE - IMAGE */}
+        <div
+          className={`relative w-full lg:w-[580px] h-[300px] sm:h-[400px] md:h-[500px] lg:h-[680px] shrink-0 transition-all duration-1000 ease-out ${
+            isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"
+          }`}
+        >
+          <img
+            src="/call-center-hall.png"
+            alt="Call Center Hall"
+            className="w-full h-full object-cover rounded-lg"
+          />
+        </div>
 
 
         {/* RIGHT SIDE - CONTENT */}

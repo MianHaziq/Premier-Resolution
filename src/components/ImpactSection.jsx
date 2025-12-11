@@ -2,21 +2,21 @@
 const impactCards = [
   {
     id: 1,
-    image: "/heroImage.jpg",
+    image: "/cd-1.png",
     title: "Accelerated Hiring for Critical Projects",
     description:
       "We provide rapid staffing solutions to help you scale during urgent or high-demand periods. Our recruitment process ensures you get trained, reliable talent fast.",
   },
   {
     id: 2,
-    image: "/heroImage.jpg",
+    image: "/cd-2.png",
     title: "Enterprise Ready Workforce Solutions",
     description:
       "Get access to skilled professionals ready to support high-volume and enterprise operations. Our workforce integrates smoothly into your existing systems for long-term success.",
   },
   {
     id: 3,
-    image: "/heroImage.jpg",
+    image: "/cd-3.png",
     title: "Enabled a Debt-Collection services",
     description:
       "Premiere Resolution empowers businesses with complete, technology-backed debt recovery support. Our proven framework improves recovery rates while reducing operational stress.",

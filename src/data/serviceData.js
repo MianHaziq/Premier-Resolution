@@ -1524,7 +1524,7 @@ export const defaultCTAData = {
   ctaText: "Get Your Free Consultation Today",
   buttonText: "Contact Us",
   buttonLink: "/contact",
-  image: "/heroImage.jpg",
+  image: "/liveChat.png",
   imageAlt: "Professional business support team",
 };
 
@@ -1536,7 +1536,7 @@ export const debtCollectionCTAData = {
   ctaText: "Get Your Free Consultation Today",
   buttonText: "Start Collection",
   buttonLink: "/contact",
-  image: "/heroImage.jpg",
+  image: "/liveChat.png",
   imageAlt: "Debt collection expert on phone",
 };
 
@@ -1547,7 +1547,7 @@ export const emailSupportCTAData = {
   ctaText: "Get Your Free Consultation Today",
   buttonText: "Start Campaign",
   buttonLink: "/contact",
-  image: "/heroImage.jpg",
+  image: "/liveChat.png",
   imageAlt: "Email marketing specialist",
 };
 
@@ -1558,7 +1558,7 @@ export const aiChatbotCTAData = {
   ctaText: "Get Your Free Consultation Today",
   buttonText: "Explore AI Solutions",
   buttonLink: "/contact",
-  image: "/heroImage.jpg",
+  image: "/liveChat.png",
   imageAlt: "AI chatbot automation",
 };
 
@@ -1569,7 +1569,7 @@ export const businessManagementCTAData = {
   ctaText: "Get Your Free Consultation Today",
   buttonText: "Get Support",
   buttonLink: "/contact",
-  image: "/heroImage.jpg",
+  image: "/liveChat.png",
   imageAlt: "Business management support",
 };
 
@@ -1580,7 +1580,7 @@ export const customerServicesCTAData = {
   ctaText: "Get Your Free Consultation Today",
   buttonText: "Get Started",
   buttonLink: "/contact",
-  image: "/heroImage.jpg",
+  image: "/liveChat.png",
   imageAlt: "Customer service representative",
 };
 
@@ -1591,6 +1591,6 @@ export const liveChatCTAData = {
   ctaText: "Get Your Free Consultation Today",
   buttonText: "Start Chatting",
   buttonLink: "/contact",
-  image: "/heroImage.jpg",
+  image: "/liveChat.png",
   imageAlt: "Live chat support agent",
 };

@@ -53,39 +53,51 @@ const IconBPO = () => (
 const SERVICES = [
   {
     icon: <IconCode />,
+    image: "/debt.png",
     title: "Debt Collection Services",
     description:
       "Recover payments quickly and professionally with our compliant, customer-friendly recovery team.",
+    link: "/services/debt-collection",
   },
   {
     icon: <IconGlobe />,
+    image: "/email.png",
     title: "Email Marketing Solutions",
     description:
       "Engage customers with targeted campaigns that boost conversions and build lasting brand loyalty.",
+    link: "/services/email-support",
   },
   {
     icon: <IconGears />,
+    image: "/aiChatbot.png",
     title: "AI Chatbot Automation 24/7",
     description:
       "Provide instant, 24/7 responses with intelligent chatbots that reduce workload and improve support.",
+    link: "/services/ai-chatbot",
   },
   {
     icon: <IconBPO />,
+    image: "/bm.png",
     title: "Business Management Support",
     description:
       "Streamline operations, improve efficiency, and keep your business running smoothly.",
+    link: "/services/business-management",
   },
   {
     icon: <IconSales />,
+    image: "/callSupport.png",
     title: "Call Center & Business Solutions",
     description:
       "Professional inbound and outbound support tailored to enhance customer experience.",
+    link: "/services/customer-services",
   },
   {
     icon: <IconChat />,
+    image: "/liveChat.png",
     title: "Live Chat & Customer Support",
     description:
       "Provide real-time assistance when customers need it most with 87% satisfaction ratings.",
+    link: "/services/live-chat-support",
   },
 ];
 
