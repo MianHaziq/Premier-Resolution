@@ -1,6 +1,7 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Clock, Send, User, MessageSquare } from "lucide-react";
+import emailjs from "@emailjs/browser";
 import { useToast } from "../components/ui/Toast";
 import PageHeader from "../components/ui/PageHeader";
 
@@ -167,18 +168,17 @@ const SelectField = ({
 // Service Options
 const serviceOptions = [
   { value: "debt-collection", label: "Debt Collection Services" },
-  { value: "customer-services", label: "Customer Services" },
-  { value: "sales-services", label: "Sales Services" },
-  { value: "email-support", label: "Email Support" },
-  { value: "live-chat-support", label: "Live Chat Support" },
-  { value: "bpo-operations", label: "BPO Operations" },
-  { value: "ai-chatbot", label: "AI Chatbot Automation" },
+  { value: "email-marketing", label: "Email Marketing Solutions" },
+  { value: "ai-chatbot", label: "AI Chatbot Automation 24/7" },
   { value: "business-management", label: "Business Management Support" },
+  { value: "call-center", label: "Call Center & Business Solutions" },
+  { value: "live-chat-support", label: "Live Chat & Customer Support" },
   { value: "other", label: "Other" },
 ];
 
 export default function ContactPage() {
   const toast = useToast();
+  const formRef = useRef();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -201,9 +201,13 @@ export default function ContactPage() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate API call - Replace with EmailJS integration
     try {
-      await new Promise((resolve) => setTimeout(resolve, 2000));
+      await emailjs.sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        formRef.current,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      );
 
       // Success
       toast.success("Your message has been sent successfully! We'll get back to you soon.");
@@ -216,6 +220,7 @@ export default function ContactPage() {
       });
     } catch (error) {
       // Error
+      console.error("EmailJS Error:", error);
       toast.error("Failed to send message. Please try again later.");
     } finally {
       setIsSubmitting(false);
@@ -284,7 +289,7 @@ export default function ContactPage() {
               </div>
 
               {/* Form */}
-              <form onSubmit={handleSubmit} className="space-y-5 sm:space-y-6">
+              <form ref={formRef} onSubmit={handleSubmit} className="space-y-5 sm:space-y-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6">
                   <InputField
                     label="Full Name"
