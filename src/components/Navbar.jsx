@@ -106,7 +106,7 @@ export default function Navbar() {
                 <img
                   src="/logo.png"
                   alt="Logo"
-                  className="h-12 md:h-16 w-auto"
+                  className="h-16 md:h-16 w-auto"
                 />
               </Link>
             </div>
