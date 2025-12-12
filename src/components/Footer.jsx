@@ -47,13 +47,7 @@ export default function Footer() {
           {/* Column 1 - Company Info */}
           <div>
             {/* Logo */}
-            <Link to="/" className="inline-block mb-4">
-              <img
-                src="/logo.png"
-                alt="Premier Resolutions"
-                className="h-12 md:h-14 w-auto"
-              />
-            </Link>
+          
 
             <h3 className="text-[18px] md:text-[20px] font-semibold text-white mb-3">
               Premiere Resolutions
@@ -187,6 +181,18 @@ export default function Footer() {
             </p>
           </div>
 
+        </div>
+      </div>
+
+      {/* Brand Logos Section */}
+      <div className="border-t border-[#333] py-8 md:py-10">
+        <div className="max-w-[1440px] 2xl:max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20 2xl:px-24">
+          <div className="flex items-center justify-center gap-8 md:gap-12 lg:gap-16 flex-wrap">
+            <img src="/l1.png" alt="Partner" className="h-12 md:h-14 lg:h-16 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <img src="/l2.png" alt="Partner" className="h-12 md:h-14 lg:h-16 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <img src="/l3.png" alt="Partner" className="h-12 md:h-14 lg:h-16 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <img src="/l4.png" alt="Partner" className="h-12 md:h-14 lg:h-16 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+          </div>
         </div>
       </div>
 
