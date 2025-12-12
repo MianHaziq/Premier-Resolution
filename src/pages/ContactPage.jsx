@@ -252,8 +252,8 @@ export default function ContactPage() {
             <ContactInfoCard
               icon={Phone}
               title="Call Us"
-              content="+92-42-111-04-05-06"
-              href="tel:+924211104-05-06"
+              content="+92 335 4032465"
+              href="tel:+923354032465"
               delay={100}
             />
             <ContactInfoCard
@@ -420,7 +420,7 @@ export default function ContactPage() {
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3">
                     <a
-                      href="tel:+924211104-05-06"
+                      href="tel:+923354032465"
                       className="inline-flex items-center justify-center gap-2 bg-white text-[#0B9444] px-5 py-3 rounded-lg font-semibold text-[14px] hover:bg-gray-100 transition-colors"
                     >
                       <Phone size={16} />

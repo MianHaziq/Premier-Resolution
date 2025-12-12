@@ -45,7 +45,7 @@ export default function ServiceCard({ icon, title, description, link, index = 0,
             <img
               src={icon}
               alt=""
-              className="w-7 h-7 object-contain transition-all duration-300"
+              className="w-10 h-10 object-contain transition-all duration-300"
             />
           </div>
         </div>

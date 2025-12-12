@@ -20,7 +20,7 @@ const jobListings = [
     id: 1,
     title: "Customer Support Specialist",
     department: "Customer Service",
-    location: "Manchester, UK",
+    location: "Lahore, Pakistan",
     type: "Full-time",
     experience: "1-2 years",
     description:
@@ -30,7 +30,7 @@ const jobListings = [
     id: 2,
     title: "Debt Collection Agent",
     department: "Collections",
-    location: "Manchester, UK",
+    location: "Lahore, Pakistan",
     type: "Full-time",
     experience: "2-3 years",
     description:
@@ -50,7 +50,7 @@ const jobListings = [
     id: 4,
     title: "Team Lead - Chat Support",
     department: "Customer Service",
-    location: "Manchester, UK",
+    location: "Lahore, Pakistan",
     type: "Full-time",
     experience: "3-5 years",
     description:
@@ -60,7 +60,7 @@ const jobListings = [
     id: 5,
     title: "Quality Assurance Analyst",
     department: "Operations",
-    location: "Manchester, UK",
+    location: "Lahore, Pakistan",
     type: "Full-time",
     experience: "2-4 years",
     description:

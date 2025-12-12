@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { Headphones, Banknote, MessageCircle, Mail, Check } from "lucide-react";
+import { Check } from "lucide-react";
 import PageHeader from "../components/ui/PageHeader";
 
 // Real Stories data
@@ -25,35 +25,35 @@ const realStories = [
   },
 ];
 
-// Services data
+// Services data - first 4 services matching home page
 const services = [
   {
-    icon: Headphones,
-    title: "Call Center\nSolutions",
-    description:
-      "Our professional agents provide responsive, high-quality support across inbound, outbound, and blended campaigns. We maintain industry-leading.",
-    link: "/services/customer-services",
-  },
-  {
-    icon: Banknote,
+    icon: "/debtIcon.png",
     title: "Debt Collection\nServices",
     description:
       "We use a diplomatic and compliant approach to recover outstanding payments while maintaining customer relationships and brand reputation.",
     link: "/services/debt-collection",
   },
   {
-    icon: MessageCircle,
-    title: "Chat Support\nServices",
-    description:
-      "Our live chat specialists handle real-time customer queries with professionalism and empathy, ensuring customers receive instant assistance without delays.",
-    link: "/services/live-chat-support",
-  },
-  {
-    icon: Mail,
+    icon: "/emailIconn.png",
     title: "Email Marketing\nSolutions",
     description:
       "Our team designs email funnels that engage, nurture, and convert—helping businesses build stronger relationships and achieve measurable ROI.",
     link: "/services/email-support",
+  },
+  {
+    icon: "/aiChatBotIcon.png",
+    title: "AI Chatbot\nAutomation",
+    description:
+      "Provide instant, 24/7 responses with intelligent chatbots that reduce workload and improve customer support efficiency.",
+    link: "/services/ai-chatbot",
+  },
+  {
+    icon: "/bmIcon.png",
+    title: "Business Management\nSupport",
+    description:
+      "Streamline operations, improve efficiency, and keep your business running smoothly with our comprehensive management solutions.",
+    link: "/services/business-management",
   },
 ];
 
@@ -186,7 +186,6 @@ export default function AboutUsPage() {
             <div className="bg-white rounded-xl shadow-xl overflow-hidden">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                 {services.map((service, index) => {
-                  const Icon = service.icon;
                   const isLast = index === services.length - 1;
                   return (
                     <div
@@ -201,7 +200,7 @@ export default function AboutUsPage() {
                       {/* Icon */}
                       <div className="flex justify-center mb-5">
                         <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-[#0B9444]/10 flex items-center justify-center">
-                          <Icon size={28} className="text-[#0B9444]" />
+                          <img src={service.icon} alt="" className="w-8 h-8 md:w-10 md:h-10 object-contain" />
                         </div>
                       </div>
 

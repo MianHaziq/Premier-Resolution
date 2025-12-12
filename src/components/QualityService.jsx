@@ -113,7 +113,7 @@ const SERVICES_DATA = [
   },
   {
     id: 7,
-    image: "/heroImage.jpg",
+    image: "/saleServiceIcon.jpg",
     title: "Sales Services",
     description:
       "Expert sales support with lead generation and appointment setting delivering higher conversion rates.",

@@ -126,13 +126,19 @@ export default function Footer() {
                   className="flex items-start gap-3 text-[13px] md:text-[14px] text-[#9CA3AF] hover:text-[#0B9444] transition-colors group"
                 >
                   <Phone size={18} className="text-[#0B9444] mt-0.5 shrink-0" />
-                  <span>+92-42-111-04-05-06</span>
+                  <span>+923354032465</span>
                 </a>
               </li>
               <li className="flex items-start gap-3 text-[13px] md:text-[14px] text-[#9CA3AF]">
                 <MapPin size={18} className="text-[#0B9444] mt-0.5 shrink-0" />
                 <span>
                   30-32 Knowsley Street, Unit 2, Little Giants Mall, Manchester, England, M8 8HQ
+                </span>
+              </li>
+              <li className="flex items-start gap-3 text-[13px] md:text-[14px] text-[#9CA3AF]">
+                <MapPin size={18} className="text-[#0B9444] mt-0.5 shrink-0" />
+                <span>
+                  Building 156 Alliance Office, M Block Main Blvd, Johar Town, Lahore, Punjab Pakistan
                 </span>
               </li>
             </ul>

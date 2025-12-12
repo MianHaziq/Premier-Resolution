@@ -19,7 +19,7 @@ const SERVICES = [
     link: "/services/email-support",
   },
   {
-    icon: "/aiIcon.png",
+    icon: "/aiChatBotIcon.png",
     title: "AI Chatbot Automation 24/7",
     description:
       "Provide instant, 24/7 responses with intelligent chatbots that reduce workload and improve support.",
@@ -33,21 +33,21 @@ const SERVICES = [
     link: "/services/business-management",
   },
   {
-    icon: "/callIcon.png",
+    icon: "/callCenterIcon.png",
     title: "Call Center & Business Solutions",
     description:
       "Professional inbound and outbound support tailored to enhance customer experience.",
     link: "/services/customer-services",
   },
   {
-    icon: "/supportIcon.png",
+    icon: "/csIcon.png",
     title: "Customer Support",
     description:
       "Provide real-time assistance when customers need it most with 87% satisfaction ratings.",
     link: "/services/live-chat-support",
   },
   {
-    icon: "/salesIcon.png",
+    icon: "/csIcon.png",
     title: "Sales Services",
     description:
       "Expert sales support with lead generation and appointment setting delivering 43% higher conversion rates.",
