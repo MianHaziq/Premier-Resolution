@@ -59,10 +59,10 @@ const services = [
 
 // Stats data
 const statsData = [
-  { number: 20, label: "Experience years" },
-  { number: 520, label: "Customers" },
-  { number: 320, label: "Projects done" },
-  { number: 40, label: "Awards" },
+  { number: 8, label: "Experience years" },
+  { number: 50, label: "Clients" },
+  { number: 100, label: "Projects done" },
+  { number: 11, label: "Awards" },
 ];
 
 // CountUp component with animation
@@ -170,7 +170,7 @@ export default function AboutUsPage() {
         {/* Office Image */}
         <div className="w-full">
           <img
-            src="/call-center.png"
+            src="/hall.jpg"
             alt="Our Office"
             className="w-full h-[200px] sm:h-[300px] md:h-[450px] lg:h-[550px] 2xl:h-[600px] object-cover"
           />
@@ -416,7 +416,7 @@ export default function AboutUsPage() {
                         Let's connect through email
                       </p>
                       <p className="text-[12px] md:text-[13px] lg:text-[14px] text-white font-medium">
-                        Hassansarfaraz@premierresolutions.net
+                        H.Sarfaraz1@iclode.com
                       </p>
                     </a>
                   </div>

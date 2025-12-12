@@ -212,10 +212,10 @@ export default function CareerPage() {
         <div className="max-w-[1440px] 2xl:max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20 2xl:px-24">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
             {[
-              { number: "500+", label: "Team Members" },
-              { number: "15+", label: "Countries" },
+              { number: "100+", label: "Team Members" },
+              { number: "10+", label: "Projects" },
               { number: "98%", label: "Employee Satisfaction" },
-              { number: "50+", label: "Open Positions" },
+              { number: "20+", label: "Open Positions" },
             ].map((stat, index) => (
               <div key={index} className="text-center">
                 <p className="text-[32px] sm:text-[40px] md:text-[48px] font-bold text-[#0B9444] mb-1 sm:mb-2">

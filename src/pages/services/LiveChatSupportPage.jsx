@@ -8,7 +8,7 @@ import {
 export default function LiveChatSupportPage() {
   return (
     <ServiceContentSection
-      serviceName="Live Chat & Customer Support"
+      serviceName="Customer Support"
       data={liveChatSupportData}
       faqData={liveChatFAQData}
       ctaData={liveChatCTAData}

@@ -96,7 +96,7 @@ const SERVICES_DATA = [
   {
     id: 6,
     image: "/liveChat.png",
-    title: "Live Chat & Customer Support",
+    title: "Customer Support",
     description:
       "Provide real-time assistance when customers need it most with high satisfaction ratings.",
     features: [
@@ -110,6 +110,24 @@ const SERVICES_DATA = [
     qualityTitle: "Real-time engagement",
     qualityDescription:
       "Instant customer engagement through live chat solutions. Our agents provide immediate assistance, improving customer satisfaction and reducing response times significantly.",
+  },
+  {
+    id: 7,
+    image: "/heroImage.jpg",
+    title: "Sales Services",
+    description:
+      "Expert sales support with lead generation and appointment setting delivering higher conversion rates.",
+    features: [
+      { icon: "success", text: "Lead Generation" },
+      { icon: "call", text: "Appointment Setting" },
+      { icon: "monitoring", text: "Pipeline Management" },
+      { icon: "reporting", text: "Sales Analytics" },
+      { icon: "support", text: "43% Higher Conversions" },
+      { icon: "collection", text: "5:1 Average ROI" },
+    ],
+    qualityTitle: "Revenue-driven solutions",
+    qualityDescription:
+      "Strategic sales support designed to maximize your revenue potential. Our experienced sales teams execute targeted campaigns that convert prospects into loyal customers with 43% higher conversion rates.",
   },
 ];
 

@@ -9,10 +9,10 @@ export default function AboutUs() {
 
   // Statistics data
   const stats = [
-    { number: 20, label: "Experience years", suffix: "" },
-    { number: 340, label: "Customers", suffix: "+" },
-    { number: 520, label: "Projects done", suffix: "+" },
-    { number: 40, label: "Awards", suffix: "" },
+    { number: 8, label: "Experience years", suffix: "+" },
+    { number: 50, label: "Clients", suffix: "+" },
+    { number: 100, label: "Projects done", suffix: "+" },
+    { number: 11, label: "Awards", suffix: "+" },
   ];
 
   // Animated counter state

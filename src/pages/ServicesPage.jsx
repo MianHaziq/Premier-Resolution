@@ -47,10 +47,18 @@ const services = [
   {
     id: 6,
     image: "/liveChat.png",
-    title: "Live Chat & Customer Support",
+    title: "Customer Support",
     description:
       "Provide real-time assistance when customers need it most. Keep satisfaction support team.",
     link: "/services/live-chat-support",
+  },
+  {
+    id: 7,
+    image: "/heroImage.jpg",
+    title: "Sales Services",
+    description:
+      "Expert sales support with lead generation and appointment setting delivering 43% higher conversion rates.",
+    link: "/services/sales-services",
   },
 ];
 

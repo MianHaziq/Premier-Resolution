@@ -2,102 +2,56 @@
 import { useEffect, useRef, useState } from "react";
 import ServiceCard from "./ui/ServiceCard";
 
-/* Inline SVG icons so copying the file works immediately */
-const IconCode = () => (
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-    <rect x="1" y="1" width="22" height="22" rx="3" stroke="#20A871" strokeWidth="1.5" fill="none"/>
-    <path d="M9.5 8L6 11.5L9.5 15" stroke="#20A871" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-    <path d="M14.5 8L18 11.5L14.5 15" stroke="#20A871" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-  </svg>
-);
-
-const IconGears = () => (
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-    <rect x="1" y="1" width="22" height="22" rx="3" stroke="#20A871" strokeWidth="1.5" fill="none"/>
-    <circle cx="9.5" cy="13" r="1.4" fill="#20A871"/>
-    <path d="M9.5 9.6v-1.9" stroke="#20A871" strokeWidth="1.4" strokeLinecap="round"/>
-    <circle cx="15.5" cy="9" r="1.4" fill="#20A871"/>
-  </svg>
-);
-
-const IconSales = () => (
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-    <rect x="1" y="1" width="22" height="22" rx="3" stroke="#20A871" strokeWidth="1.5" fill="none"/>
-    <path d="M6 9h12M8 15h8" stroke="#20A871" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
-  </svg>
-);
-
-const IconGlobe = () => (
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-    <rect x="1" y="1" width="22" height="22" rx="3" stroke="#20A871" strokeWidth="1.5" fill="none"/>
-    <circle cx="12" cy="12" r="3" stroke="#20A871" strokeWidth="1.4"/>
-  </svg>
-);
-
-const IconChat = () => (
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-    <rect x="1" y="1" width="22" height="22" rx="3" stroke="#20A871" strokeWidth="1.5" fill="none"/>
-    <path d="M8 11h8M8 14h5" stroke="#20A871" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
-  </svg>
-);
-
-const IconBPO = () => (
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-    <rect x="1" y="1" width="22" height="22" rx="3" stroke="#20A871" strokeWidth="1.5" fill="none"/>
-    <circle cx="12" cy="10" r="1.3" fill="#20A871"/>
-    <path d="M9 15c0-1 1.5-2 3-2s3 1 3 2" stroke="#20A871" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
-  </svg>
-);
-
-/* Data array matching the six services */
+/* Data array matching the seven services */
 const SERVICES = [
   {
-    icon: <IconCode />,
-    image: "/debt.png",
+    icon: "/debtIcon.png",
     title: "Debt Collection Services",
     description:
       "Recover payments quickly and professionally with our compliant, customer-friendly recovery team.",
     link: "/services/debt-collection",
   },
   {
-    icon: <IconGlobe />,
-    image: "/email.png",
+    icon: "/emailIconn.png",
     title: "Email Marketing Solutions",
     description:
       "Engage customers with targeted campaigns that boost conversions and build lasting brand loyalty.",
     link: "/services/email-support",
   },
   {
-    icon: <IconGears />,
-    image: "/aiChatbot.png",
+    icon: "/aiIcon.png",
     title: "AI Chatbot Automation 24/7",
     description:
       "Provide instant, 24/7 responses with intelligent chatbots that reduce workload and improve support.",
     link: "/services/ai-chatbot",
   },
   {
-    icon: <IconBPO />,
-    image: "/bm.png",
+    icon: "/bmIcon.png",
     title: "Business Management Support",
     description:
       "Streamline operations, improve efficiency, and keep your business running smoothly.",
     link: "/services/business-management",
   },
   {
-    icon: <IconSales />,
-    image: "/callSupport.png",
+    icon: "/callIcon.png",
     title: "Call Center & Business Solutions",
     description:
       "Professional inbound and outbound support tailored to enhance customer experience.",
     link: "/services/customer-services",
   },
   {
-    icon: <IconChat />,
-    image: "/liveChat.png",
-    title: "Live Chat & Customer Support",
+    icon: "/supportIcon.png",
+    title: "Customer Support",
     description:
       "Provide real-time assistance when customers need it most with 87% satisfaction ratings.",
     link: "/services/live-chat-support",
+  },
+  {
+    icon: "/salesIcon.png",
+    title: "Sales Services",
+    description:
+      "Expert sales support with lead generation and appointment setting delivering 43% higher conversion rates.",
+    link: "/services/sales-services",
   },
 ];
 

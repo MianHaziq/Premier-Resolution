@@ -12,6 +12,7 @@ import {
   ArrowRight,
   Mail as MailIcon,
   Bot,
+  TrendingUp,
 } from "lucide-react";
 import BookButton from "./ui/BookButton";
 
@@ -48,10 +49,16 @@ const services = [
     description: "Inbound & outbound support",
   },
   {
-    name: "Live Chat & Customer Support",
+    name: "Customer Support",
     path: "/services/live-chat-support",
     icon: MessageCircle,
     description: "Real-time assistance",
+  },
+  {
+    name: "Sales Services",
+    path: "/services/sales-services",
+    icon: TrendingUp,
+    description: "Lead generation & appointments",
   },
 ];
 

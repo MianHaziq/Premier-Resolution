@@ -800,7 +800,7 @@ export const liveChatSupportData = {
   sections: [
     {
       type: "main",
-      heading: "Real-Time Live Chat & Customer Support",
+      heading: "Real-Time Customer Support",
       intro:
         "Provide real-time assistance when customers need it most. With **87% of live chat conversations receiving positive satisfaction ratings**, chat support has become essential for modern customer experience.",
       subSections: [
@@ -949,6 +949,171 @@ export const liveChatSupportData = {
         },
         {
           text: "**Start your live chat journey with Premiere Resolutions today.**",
+          bold: true,
+        },
+      ],
+    },
+  ],
+};
+
+// ============================================
+// 7. SALES SERVICES DATA
+// ============================================
+export const salesServicesData = {
+  sections: [
+    {
+      type: "main",
+      heading: "Expert Sales Outsourcing Solutions",
+      intro:
+        "Drive revenue growth with our professional sales support services. B2B companies using outsourced lead generation see a **43% higher conversion rate**, and for every $1 spent, companies report an average ROI of $5.",
+      subSections: [
+        {
+          heading: "Lead Generation Excellence",
+          paragraphs: [
+            {
+              text: "Our specialized team identifies and qualifies **high-quality leads** through targeted outreach, ensuring your sales pipeline stays full of potential customers ready to convert. Businesses with strong lead generation processes achieve **133% greater revenue** compared to those without a defined strategy.",
+            },
+          ],
+        },
+        {
+          heading: "Appointment Setting Services",
+          paragraphs: [
+            {
+              text: "We schedule **qualified appointments with decision-makers**, giving your sales team more opportunities to close deals. Our clients have reported a boost in closing ratios—from **11% to 40%**—through professional appointment setting services.",
+            },
+          ],
+        },
+        {
+          heading: "Faster Time-to-Results",
+          paragraphs: [
+            {
+              text: "An in-house sales team typically takes **2 to 3 months** to become fully functional. Our specialized outsourced team can launch outreach campaigns in **weeks, not months**, delivering results while you focus on closing deals.",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      type: "main",
+      heading: "Comprehensive Sales Support",
+      subSections: [
+        {
+          heading: "Outbound Sales Campaigns",
+          paragraphs: [
+            {
+              text: "Strategic outbound calling campaigns designed to generate interest, qualify prospects, and set appointments. Our trained sales professionals represent your brand with expertise and professionalism.",
+            },
+          ],
+        },
+        {
+          heading: "Inside Sales Support",
+          paragraphs: [
+            {
+              text: "Dedicated inside sales representatives who handle the complete sales cycle from prospecting to closing. We integrate seamlessly with your existing sales process and CRM systems.",
+            },
+          ],
+        },
+        {
+          heading: "Sales Pipeline Management",
+          paragraphs: [
+            {
+              text: "End-to-end pipeline management ensuring no opportunity falls through the cracks. We track, nurture, and advance leads through your sales funnel systematically.",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      type: "main",
+      heading: "Our Sales Services Include",
+      bullets: [
+        {
+          label: "Lead Generation & Qualification",
+          text: "Targeted outreach to identify and qualify high-potential prospects.",
+        },
+        {
+          label: "B2B Appointment Setting",
+          text: "Schedule meetings with qualified decision-makers for your sales team.",
+        },
+        {
+          label: "Outbound Sales Campaigns",
+          text: "Professional cold calling and warm outreach campaigns.",
+        },
+        {
+          label: "Inside Sales Representatives",
+          text: "Dedicated sales support handling the complete sales cycle.",
+        },
+        {
+          label: "CRM Management",
+          text: "Data entry, pipeline updates, and sales process documentation.",
+        },
+        {
+          label: "Sales Analytics & Reporting",
+          text: "Detailed performance metrics and conversion tracking.",
+        },
+        {
+          label: "Customer Follow-ups",
+          text: "Systematic follow-up sequences to nurture leads to conversion.",
+        },
+        {
+          label: "Market Research",
+          text: "Competitive analysis and prospect research to inform strategy.",
+        },
+      ],
+    },
+    {
+      type: "main",
+      heading: "ROI-Driven Results",
+      subSections: [
+        {
+          heading: "Significant Cost Savings",
+          paragraphs: [
+            {
+              text: "An in-house SDR including salary, benefits, and tools can cost over **$100,000 annually**. Our outsourcing model eliminates recruitment costs, training expenses, and overhead while delivering measurable results.",
+            },
+          ],
+        },
+        {
+          heading: "Proven Performance Metrics",
+          paragraphs: [
+            {
+              text: "Our clients achieve realistic benchmarks including increasing booking rates from **5% to 12%**, show-up rates from **70% to 85%**, and lead conversion rates from **20% to 35%** within three months.",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      type: "main",
+      heading: "Why Choose Premiere Resolutions for Sales Services?",
+      bullets: [
+        {
+          label: "43% Higher Conversion Rates",
+          text: "B2B companies using outsourced lead generation see significantly better results.",
+        },
+        {
+          label: "5:1 Average ROI",
+          text: "For every $1 spent on outsourced lead generation, companies report $5 in returns.",
+        },
+        {
+          label: "2-3 Week Launch Time",
+          text: "Start generating leads in weeks instead of the months required for in-house teams.",
+        },
+        {
+          label: "Flexible Pricing Models",
+          text: "Pay-per-appointment, hourly, or retainer options to match your budget.",
+        },
+      ],
+    },
+    {
+      type: "main",
+      heading: "Accelerate Your Sales Growth",
+      paragraphs: [
+        {
+          text: "Sales professionals already spend 21% of their time prospecting, leaving less time for closing deals. Let our expert team handle lead generation and appointment setting while your closers focus on what they do best.",
+        },
+        {
+          text: "**Partner with Premiere Resolutions to supercharge your sales pipeline today.**",
           bold: true,
         },
       ],
@@ -1499,6 +1664,79 @@ export const businessManagementFAQData = {
   ],
 };
 
+export const salesServicesFAQData = {
+  title: "Sales Services FAQs",
+  subtitle:
+    "Common questions about our sales outsourcing and lead generation services",
+  tabs: [
+    {
+      label: "General",
+      questions: [
+        {
+          question: "What sales services do you offer?",
+          answer:
+            "We provide lead generation, B2B appointment setting, outbound sales campaigns, inside sales support, CRM management, and sales analytics.",
+        },
+        {
+          question: "How quickly can you start generating leads?",
+          answer:
+            "Our specialized team can launch outreach campaigns in 2-3 weeks, compared to 2-3 months for building an in-house team.",
+        },
+        {
+          question: "What industries do you work with?",
+          answer:
+            "We serve B2B companies across technology, SaaS, professional services, healthcare, finance, and manufacturing industries.",
+        },
+        {
+          question: "Do you integrate with our CRM?",
+          answer:
+            "Yes, we seamlessly integrate with Salesforce, HubSpot, Pipedrive, and other major CRM platforms for real-time pipeline visibility.",
+        },
+      ],
+    },
+    {
+      label: "Pricing",
+      questions: [
+        {
+          question: "How are sales services priced?",
+          answer:
+            "We offer pay-per-appointment, hourly rates, and monthly retainer models. Pricing depends on your target market and volume requirements.",
+        },
+        {
+          question: "What ROI can I expect?",
+          answer:
+            "On average, companies report $5 ROI for every $1 spent on outsourced lead generation. Some clients have achieved 11:1 ROI through our services.",
+        },
+        {
+          question: "Are there setup fees?",
+          answer:
+            "Setup fees vary based on campaign complexity and customization required. Contact us for a transparent quote.",
+        },
+      ],
+    },
+    {
+      label: "Service",
+      questions: [
+        {
+          question: "How do you qualify leads?",
+          answer:
+            "We use your ideal customer profile criteria including company size, industry, budget, authority, need, and timeline (BANT) to qualify prospects.",
+        },
+        {
+          question: "What conversion rates do you achieve?",
+          answer:
+            "B2B companies using our services see 43% higher conversion rates. We've helped clients boost closing ratios from 11% to 40%.",
+        },
+        {
+          question: "How do you represent our brand?",
+          answer:
+            "Our sales professionals are trained on your products, value propositions, and brand voice to represent your company professionally.",
+        },
+      ],
+    },
+  ],
+};
+
 // ============================================
 // CTA SECTION DATA
 // ============================================
@@ -1593,4 +1831,15 @@ export const liveChatCTAData = {
   buttonLink: "/contact",
   image: "/liveChat.png",
   imageAlt: "Live chat support agent",
+};
+
+export const salesServicesCTAData = {
+  heading: "Supercharge Your Sales Pipeline",
+  description:
+    "B2B companies using outsourced lead generation see 43% higher conversion rates. Our expert sales team delivers qualified appointments while you focus on closing deals.",
+  ctaText: "Get Your Free Consultation Today",
+  buttonText: "Boost Sales",
+  buttonLink: "/contact",
+  image: "/heroImage.jpg",
+  imageAlt: "Sales team professional",
 };

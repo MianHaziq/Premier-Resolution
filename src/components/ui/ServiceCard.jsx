@@ -4,11 +4,10 @@ import { Link } from "react-router-dom";
 /**
  * Interactive Service Card with hover effects
  * width: 414px
- * height: 266px
- * Includes: lift effect, border glow, icon animation, image support
+ * Includes: lift effect, border glow, custom icon image
  */
 
-export default function ServiceCard({ icon, image, title, description, link, index = 0, isVisible = true }) {
+export default function ServiceCard({ icon, title, description, link, index = 0, isVisible = true }) {
   const CardWrapper = link ? Link : "div";
   const wrapperProps = link ? { to: link } : {};
 
@@ -37,26 +36,17 @@ export default function ServiceCard({ icon, image, title, description, link, ind
       role="article"
       aria-label={title}
     >
-      {/* Image */}
-      {image && (
-        <div className="w-full h-[160px] sm:h-[180px] overflow-hidden">
-          <img
-            src={image}
-            alt={title}
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-          />
-        </div>
-      )}
-
       {/* Content */}
-      <div className="flex flex-col pt-4 pr-4 pb-5 pl-4 sm:pt-5 sm:pr-[22px] sm:pb-[22px] sm:pl-[22px] gap-[10px]">
+      <div className="flex flex-col pt-5 pr-5 pb-6 pl-5 sm:pt-6 sm:pr-[22px] sm:pb-[26px] sm:pl-[22px] gap-[12px]">
         {/* Icon row */}
         <div className="w-full flex items-start">
-          <div className="inline-flex items-center justify-center w-10 h-10 rounded-lg border border-[#20A871] bg-white group-hover:bg-[#0B9444] group-hover:border-[#0B9444] transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
-            {/* icon passed in as JSX (SVG) - changes color on hover */}
-            <div className="text-[18px] text-[#1F9B63] group-hover:text-white transition-colors duration-300 [&_svg_*]:transition-all [&_svg_*]:duration-300 group-hover:[&_svg_rect]:stroke-white group-hover:[&_svg_path]:stroke-white group-hover:[&_svg_circle]:stroke-white group-hover:[&_svg_circle]:fill-white">
-              {icon}
-            </div>
+          <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg border border-[#20A871] bg-white group-hover:bg-[#0B9444] group-hover:border-[#0B9444] transition-all duration-300 group-hover:scale-110 overflow-hidden">
+            {/* Custom icon image */}
+            <img
+              src={icon}
+              alt=""
+              className="w-7 h-7 object-contain transition-all duration-300"
+            />
           </div>
         </div>
 

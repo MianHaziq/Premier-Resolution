@@ -172,7 +172,8 @@ const serviceOptions = [
   { value: "ai-chatbot", label: "AI Chatbot Automation 24/7" },
   { value: "business-management", label: "Business Management Support" },
   { value: "call-center", label: "Call Center & Business Solutions" },
-  { value: "live-chat-support", label: "Live Chat & Customer Support" },
+  { value: "customer-support", label: "Customer Support" },
+  { value: "sales-services", label: "Sales Services" },
   { value: "other", label: "Other" },
 ];
 
