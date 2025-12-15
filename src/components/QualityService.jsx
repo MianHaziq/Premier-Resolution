@@ -5,7 +5,7 @@ import { ChevronLeft, ChevronRight, Check } from "lucide-react";
 const SERVICES_DATA = [
   {
     id: 1,
-    image: "/debt.png",
+    icon: "/debtIcon.png",
     title: "Debt Collection Services",
     description:
       "Recover payments quickly and professionally with our compliant, customer-friendly recovery team.",
@@ -23,7 +23,7 @@ const SERVICES_DATA = [
   },
   {
     id: 2,
-    image: "/email.png",
+    icon: "/emailIconn.png",
     title: "Email Marketing Solutions",
     description:
       "Engage customers with targeted campaigns that boost conversions and build lasting brand loyalty.",
@@ -41,7 +41,7 @@ const SERVICES_DATA = [
   },
   {
     id: 3,
-    image: "/aiChatbot.png",
+    icon: "/aiChatBotIcon.png",
     title: "AI Chatbot Automation 24/7",
     description:
       "Provide instant, 24/7 responses with intelligent chatbots that reduce workload and improve support.",
@@ -59,7 +59,7 @@ const SERVICES_DATA = [
   },
   {
     id: 4,
-    image: "/bm.png",
+    icon: "/bmIcon.png",
     title: "Business Management Support",
     description:
       "Streamline operations, improve efficiency, and keep your business running smoothly.",
@@ -77,7 +77,7 @@ const SERVICES_DATA = [
   },
   {
     id: 5,
-    image: "/callSupport.png",
+    icon: "/callCenterIcon.png",
     title: "Call Center & Business Solutions",
     description:
       "Professional inbound and outbound support tailored to enhance customer experience.",
@@ -95,7 +95,7 @@ const SERVICES_DATA = [
   },
   {
     id: 6,
-    image: "/liveChat.png",
+    icon: "/csIcon.png",
     title: "Customer Support",
     description:
       "Provide real-time assistance when customers need it most with high satisfaction ratings.",
@@ -113,7 +113,7 @@ const SERVICES_DATA = [
   },
   {
     id: 7,
-    image: "/saleServiceIcon.jpg",
+    icon: "/ic7.png",
     title: "Sales Services",
     description:
       "Expert sales support with lead generation and appointment setting delivering higher conversion rates.",
@@ -253,19 +253,23 @@ export default function QualityService() {
           >
             {/* Service Card */}
             <div className="bg-white rounded-[12px] shadow-lg overflow-hidden border border-gray-100">
-              {/* Card Image */}
-              <div className="w-full h-[240px] sm:h-[280px] md:h-[320px] lg:h-[360px] overflow-hidden relative">
-                <img
-                  src={currentService.image}
-                  alt={currentService.title}
-                  className={`w-full h-full object-cover transition-all duration-500 ease-out ${
+              {/* Card Icon */}
+              <div className="w-full h-[180px] sm:h-[200px] md:h-[220px] lg:h-[240px] bg-[#FAFAFB] flex items-center justify-center relative overflow-hidden">
+                <div
+                  className={`w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-36 lg:h-36 rounded-full bg-[#0B9444]/10 flex items-center justify-center transition-all duration-500 ease-out ${
                     isAnimating
                       ? slideDirection === "right"
                         ? "-translate-x-full opacity-0"
                         : "translate-x-full opacity-0"
                       : "translate-x-0 opacity-100"
                   }`}
-                />
+                >
+                  <img
+                    src={currentService.icon}
+                    alt={currentService.title}
+                    className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 object-contain"
+                  />
+                </div>
               </div>
 
               {/* Card Content */}

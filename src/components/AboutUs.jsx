@@ -69,12 +69,12 @@ export default function AboutUs() {
 
         {/* LEFT SIDE - IMAGE */}
         <div
-          className={`relative w-full lg:w-[580px] h-[300px] sm:h-[400px] md:h-[500px] lg:h-[680px] shrink-0 transition-all duration-1000 ease-out ${
+          className={`relative w-full lg:w-[480px] h-[200px] sm:h-[200px] md:h-[300px] lg:h-[480px] shrink-0 transition-all duration-1000 ease-out ${
             isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"
           }`}
         >
           <img
-            src="/call-center-hall.png"
+            src="/meet-room-1.jpg"
             alt="Call Center Hall"
             className="w-full h-full object-cover rounded-lg"
           />

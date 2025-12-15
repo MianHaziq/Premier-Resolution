@@ -28,25 +28,25 @@ const realStories = [
 // Services data - first 4 services matching home page
 const services = [
   {
+    icon: "/csIcon.png",
+    title: "Customer\nSupport",
+    description:
+      "Provide real-time assistance when customers need it most with 87% satisfaction ratings and professional support teams.",
+    link: "/services/live-chat-support",
+  },
+  {
+    icon: "/ic7.png",
+    title: "Sales\nServices",
+    description:
+      "Expert sales support with lead generation and appointment setting delivering 43% higher conversion rates.",
+    link: "/services/sales-services",
+  },
+  {
     icon: "/debtIcon.png",
     title: "Debt Collection\nServices",
     description:
       "We use a diplomatic and compliant approach to recover outstanding payments while maintaining customer relationships and brand reputation.",
     link: "/services/debt-collection",
-  },
-  {
-    icon: "/emailIconn.png",
-    title: "Email Marketing\nSolutions",
-    description:
-      "Our team designs email funnels that engage, nurture, and convert—helping businesses build stronger relationships and achieve measurable ROI.",
-    link: "/services/email-support",
-  },
-  {
-    icon: "/aiChatBotIcon.png",
-    title: "AI Chatbot\nAutomation",
-    description:
-      "Provide instant, 24/7 responses with intelligent chatbots that reduce workload and improve customer support efficiency.",
-    link: "/services/ai-chatbot",
   },
   {
     icon: "/bmIcon.png",
@@ -236,10 +236,7 @@ export default function AboutUsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
             {/* Left - Content */}
             <div>
-              {/* Label */}
-              <p className="text-[14px] md:text-[15px] text-[#0B9444] font-medium mb-3">
-                Sales Support
-              </p>
+          
 
               {/* Main Heading */}
               <h2 className="text-[28px] md:text-[36px] lg:text-[42px] 2xl:text-[46px] font-bold text-[#1a1a1a] leading-tight mb-5 md:mb-6">
@@ -248,7 +245,7 @@ export default function AboutUsPage() {
 
               {/* Description Paragraphs */}
               <p className="text-[13px] md:text-[14px] lg:text-[15px] text-[#6B7280] leading-relaxed mb-5">
-                At Premier Resolution, we help businesses drive revenue through structured, results-oriented sales support. With over 7 years of operational experience, our team specializes in lead generation, outbound campaigns, appointment setting, and follow-ups, ensuring your sales pipeline stays active and productive.
+                At Premier Resolution, we help businesses drive revenue through structured, results-oriented sales support and customer support. With over 7 years of operational experience, our team specializes in lead generation, outbound campaigns, appointment setting, and follow-ups, ensuring your sales pipeline stays active and productive.
               </p>
 
               <p className="text-[13px] md:text-[14px] lg:text-[15px] text-[#6B7280] leading-relaxed mb-5">
@@ -259,14 +256,15 @@ export default function AboutUsPage() {
                 Our company is registered in the United Kingdom with operational excellence based in Pakistan, allowing us to deliver cost-effective, high-quality solutions without compromising on service. Whether it's B2B or B2C, our sales solutions are designed to accelerate growth, improve efficiency, and deliver measurable results for your business.
               </p>
 
-              {/* UK Address Card */}
-              <div className="bg-[#FAFAFB] rounded-xl p-5 md:p-6 border-l-4 border-[#0B9444]">
-                <p className="text-[12px] md:text-[13px] text-[#0B9444] font-medium mb-2">
-                  UK Registered Address
-                </p>
-                <p className="text-[13px] md:text-[14px] lg:text-[15px] text-[#1a1a1a] leading-relaxed">
-                  30-32 Knowsley Street, Unit 2, Little Giants Mall, Manchester, England, M8 8HQ
-                </p>
+              {/* Brand Logos */}
+              <div className="bg-[#1a1a1a] rounded-xl p-5 md:p-6 lg:p-8">
+                <p className="text-[11px] md:text-[12px] text-white/60 mb-4 md:mb-5 text-center">Trusted by leading companies</p>
+                <div className="flex items-center justify-center gap-6 md:gap-8 lg:gap-10 flex-wrap">
+                  <img src="/l1.png" alt="Partner" className="h-14 md:h-16 lg:h-20 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-300" />
+                  <img src="/l2.png" alt="Partner" className="h-14 md:h-16 lg:h-20 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-300" />
+                  <img src="/l3.png" alt="Partner" className="h-14 md:h-16 lg:h-20 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-300" />
+                  <img src="/l4.png" alt="Partner" className="h-14 md:h-16 lg:h-20 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-300" />
+                </div>
               </div>
             </div>
 
@@ -511,7 +509,7 @@ export default function AboutUsPage() {
                         Let's connect through email
                       </p>
                       <p className="text-[12px] md:text-[13px] lg:text-[14px] text-white font-medium">
-                        H.Sarfaraz1@iclode.com
+                        H.Sarfaraz1@icloud.com
                       </p>
                     </a>
                   </div>
