@@ -90,7 +90,7 @@ export default function ServicesSection() {
           >
             Success,{" "}
             <span className="relative">
-              <span className="relative z-10">Powered by Premiere Resolutions</span>
+              <span className="relative z-10">Powered by Premier Resolutions</span>
               <span
                 className={`absolute left-0 right-0 bottom-0 h-[3px] sm:h-[4px] bg-[#20A871] rounded-full transition-all duration-700 delay-500 ${
                   isVisible ? "scale-x-100" : "scale-x-0"

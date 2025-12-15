@@ -398,11 +398,11 @@ export default function Navbar() {
                 <span>+1 (234) 567-890</span>
               </a>
               <a
-                href="mailto:info@premierresolution.com"
+                href="mailto:info@Premierresolution.com"
                 className="flex items-center gap-3 text-[14px] text-[#6B7280] hover:text-[#0B9444] transition-colors"
               >
                 <Mail size={16} className="text-[#0B9444]" />
-                <span>info@premierresolution.com</span>
+                <span>info@Premierresolution.com</span>
               </a>
             </div>
 

@@ -4,6 +4,7 @@ import './App.css'
 import Preloader from './components/ui/Preloader'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import WhatsAppButton from './components/ui/WhatsAppButton'
 import { ToastProvider } from './components/ui/Toast'
 import Home from './pages/Home'
 import AboutUsPage from './pages/AboutUsPage'
@@ -47,6 +48,7 @@ function App() {
         <Route path="/services/sales-services" element={<SalesServicesPage />} />
       </Routes>
       <Footer />
+      <WhatsAppButton />
     </ToastProvider>
   )
 }

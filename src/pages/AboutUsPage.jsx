@@ -8,7 +8,7 @@ const realStories = [
   {
     id: 1,
     youtubeId: "GNZBSZD16cY",
-    quote: "Working with Premiere Resolutions has transformed our customer engagement. Their team is highly responsive and always professional.",
+    quote: "Working with Premier Resolutions has transformed our customer engagement. Their team is highly responsive and always professional.",
     author: "Emily Jack",
   },
   {
@@ -230,6 +230,102 @@ export default function AboutUsPage() {
         </div>
       </section>
 
+      {/* Sales Support Section */}
+      <section className="bg-white py-16 md:py-20 lg:py-24 mt-8 md:mt-12 lg:mt-16">
+        <div className="max-w-[1440px] 2xl:max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20 2xl:px-24">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            {/* Left - Content */}
+            <div>
+              {/* Label */}
+              <p className="text-[14px] md:text-[15px] text-[#0B9444] font-medium mb-3">
+                Sales Support
+              </p>
+
+              {/* Main Heading */}
+              <h2 className="text-[28px] md:text-[36px] lg:text-[42px] 2xl:text-[46px] font-bold text-[#1a1a1a] leading-tight mb-5 md:mb-6">
+                Driving Revenue Through Results
+              </h2>
+
+              {/* Description Paragraphs */}
+              <p className="text-[13px] md:text-[14px] lg:text-[15px] text-[#6B7280] leading-relaxed mb-5">
+                At Premier Resolution, we help businesses drive revenue through structured, results-oriented sales support. With over 7 years of operational experience, our team specializes in lead generation, outbound campaigns, appointment setting, and follow-ups, ensuring your sales pipeline stays active and productive.
+              </p>
+
+              <p className="text-[13px] md:text-[14px] lg:text-[15px] text-[#6B7280] leading-relaxed mb-5">
+                By combining skilled agents, proven scripts, and real-time reporting, we help you convert prospects into loyal customers while maintaining the highest standards of professionalism and brand representation.
+              </p>
+
+              <p className="text-[13px] md:text-[14px] lg:text-[15px] text-[#6B7280] leading-relaxed mb-8">
+                Our company is registered in the United Kingdom with operational excellence based in Pakistan, allowing us to deliver cost-effective, high-quality solutions without compromising on service. Whether it's B2B or B2C, our sales solutions are designed to accelerate growth, improve efficiency, and deliver measurable results for your business.
+              </p>
+
+              {/* UK Address Card */}
+              <div className="bg-[#FAFAFB] rounded-xl p-5 md:p-6 border-l-4 border-[#0B9444]">
+                <p className="text-[12px] md:text-[13px] text-[#0B9444] font-medium mb-2">
+                  UK Registered Address
+                </p>
+                <p className="text-[13px] md:text-[14px] lg:text-[15px] text-[#1a1a1a] leading-relaxed">
+                  30-32 Knowsley Street, Unit 2, Little Giants Mall, Manchester, England, M8 8HQ
+                </p>
+              </div>
+            </div>
+
+            {/* Right - Visual Elements */}
+            <div className="grid grid-cols-2 gap-4 md:gap-6">
+              {/* Card 1 */}
+              <div className="bg-[#FAFAFB] rounded-xl p-5 md:p-6 text-center">
+                <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-[#0B9444]/10 flex items-center justify-center mx-auto mb-4">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0B9444" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                  </svg>
+                </div>
+                <h4 className="text-[14px] md:text-[15px] font-bold text-[#1a1a1a] mb-2">Lead Generation</h4>
+                <p className="text-[12px] md:text-[13px] text-[#6B7280]">Qualified prospects for your pipeline</p>
+              </div>
+
+              {/* Card 2 */}
+              <div className="bg-[#FAFAFB] rounded-xl p-5 md:p-6 text-center">
+                <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-[#0B9444]/10 flex items-center justify-center mx-auto mb-4">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0B9444" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                  </svg>
+                </div>
+                <h4 className="text-[14px] md:text-[15px] font-bold text-[#1a1a1a] mb-2">Outbound Campaigns</h4>
+                <p className="text-[12px] md:text-[13px] text-[#6B7280]">Strategic outreach that converts</p>
+              </div>
+
+              {/* Card 3 */}
+              <div className="bg-[#FAFAFB] rounded-xl p-5 md:p-6 text-center">
+                <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-[#0B9444]/10 flex items-center justify-center mx-auto mb-4">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0B9444" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                    <line x1="16" y1="2" x2="16" y2="6" />
+                    <line x1="8" y1="2" x2="8" y2="6" />
+                    <line x1="3" y1="10" x2="21" y2="10" />
+                  </svg>
+                </div>
+                <h4 className="text-[14px] md:text-[15px] font-bold text-[#1a1a1a] mb-2">Appointment Setting</h4>
+                <p className="text-[12px] md:text-[13px] text-[#6B7280]">Scheduled meetings with decision makers</p>
+              </div>
+
+              {/* Card 4 */}
+              <div className="bg-[#FAFAFB] rounded-xl p-5 md:p-6 text-center">
+                <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-[#0B9444]/10 flex items-center justify-center mx-auto mb-4">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0B9444" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="17 1 21 5 17 9" />
+                    <path d="M3 11V9a4 4 0 0 1 4-4h14" />
+                    <polyline points="7 23 3 19 7 15" />
+                    <path d="M21 13v2a4 4 0 0 1-4 4H3" />
+                  </svg>
+                </div>
+                <h4 className="text-[14px] md:text-[15px] font-bold text-[#1a1a1a] mb-2">Follow-ups</h4>
+                <p className="text-[12px] md:text-[13px] text-[#6B7280]">Consistent engagement that closes deals</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Who We Are / Why Choose Us Section */}
       <section className="bg-[#FAFAFB] py-16 md:py-20 lg:py-24 mt-8 md:mt-12 lg:mt-16">
         <div className="max-w-[1440px] 2xl:max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20 2xl:px-24">
@@ -397,18 +493,18 @@ export default function AboutUsPage() {
 
                   {/* Tagline */}
                   <p className="text-[13px] md:text-[14px] text-[#0B9444] italic mb-5 md:mb-6 lg:mb-8">
-                    Premiere Resolution – Driving Success
+                    Premier Resolution – Driving Success
                   </p>
 
                   {/* Description */}
                   <p className="text-[13px] md:text-[14px] lg:text-[15px] text-[#6B7280] leading-[1.75] md:leading-[1.8] mb-6 md:mb-8 lg:mb-10">
-                    I'm Hassan Sarfraz, CEO of Premiere Resolution, and I'm here to guide your business on the path to operational excellence and growth. With years of experience in BPO services, customer experience, debt collection, sales support, and digital engagement, I bring a strategic perspective to help organizations streamline processes and achieve measurable results. Whether you are looking to scale your customer support, enhance operational efficiency, or drive revenue through sales and back-office solutions, Premiere Resolution is your trusted partner to make it happen.
+                    I'm Hassan Sarfraz, CEO of Premier Resolution, and I'm here to guide your business on the path to operational excellence and growth. With years of experience in BPO services, customer experience, debt collection, sales support, and digital engagement, I bring a strategic perspective to help organizations streamline processes and achieve measurable results. Whether you are looking to scale your customer support, enhance operational efficiency, or drive revenue through sales and back-office solutions, Premier Resolution is your trusted partner to make it happen.
                   </p>
 
                   {/* Email CTA */}
                   <div>
                     <a
-                      href="mailto:Hassansarfaraz@premierresolutions.net"
+                      href="mailto:Hassansarfaraz@Premierresolutions.net"
                       className="inline-block bg-[#0B9444] rounded-full px-5 md:px-7 py-3 md:py-4 hover:bg-[#098039] transition-colors"
                     >
                       <p className="text-[10px] md:text-[11px] text-white/90 mb-0.5">

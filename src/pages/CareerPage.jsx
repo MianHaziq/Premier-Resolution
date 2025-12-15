@@ -239,7 +239,7 @@ export default function CareerPage() {
               Benefits & Perks
             </span>
             <h2 className="text-[28px] sm:text-[36px] md:text-[42px] font-bold text-[#1a1a1a] mb-4">
-              Why Join Premiere Resolutions?
+              Why Join Premier Resolutions?
             </h2>
             <p className="text-[15px] sm:text-[16px] text-[#6B7280] max-w-[600px] mx-auto">
               We believe in taking care of our team. Here's what you can expect when you join us.

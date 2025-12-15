@@ -30,7 +30,7 @@ export default function Hero({ preloaderComplete = false }) {
                   : "opacity-0 translate-y-10"
               }`}
             >
-              Premiere Resolutions —
+              Premier Resolutions —
             </span>
             <span
               className={`block transition-all duration-700 ease-out ${

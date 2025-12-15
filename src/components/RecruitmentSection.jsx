@@ -23,7 +23,7 @@ export default function RecruitmentSection() {
 
                 {/* Heading */}
                 <h2 className="text-[28px] sm:text-[32px] md:text-[38px] lg:text-[44px] xl:text-[48px] font-bold text-white leading-tight mb-4 md:mb-6 italic">
-                  Grow Your Career with Premiere Resolutions
+                  Grow Your Career with Premier Resolutions
                 </h2>
 
                 {/* Description */}

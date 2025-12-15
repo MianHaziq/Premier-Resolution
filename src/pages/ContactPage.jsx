@@ -449,7 +449,7 @@ export default function ContactPage() {
             <span className="text-[#0B9444]">Great Together</span>
           </h2>
           <p className="text-[15px] sm:text-[17px] text-[#9CA3AF] max-w-[600px] mx-auto mb-8">
-            Partner with Premiere Resolutions and experience the difference that dedicated, professional service can make.
+            Partner with Premier Resolutions and experience the difference that dedicated, professional service can make.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

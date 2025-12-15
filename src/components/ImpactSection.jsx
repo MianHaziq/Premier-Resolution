@@ -19,7 +19,7 @@ const impactCards = [
     image: "/cd-3.png",
     title: "Enabled a Debt-Collection services",
     description:
-      "Premiere Resolution empowers businesses with complete, technology-backed debt recovery support. Our proven framework improves recovery rates while reducing operational stress.",
+      "Premier Resolution empowers businesses with complete, technology-backed debt recovery support. Our proven framework improves recovery rates while reducing operational stress.",
   },
 ];
 

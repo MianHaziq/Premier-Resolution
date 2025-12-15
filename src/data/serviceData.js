@@ -157,7 +157,7 @@ export const debtCollectionData = {
     },
     {
       type: "main",
-      heading: "Why Choose Premiere Resolutions for Debt Collection?",
+      heading: "Why Choose premier Resolutions for Debt Collection?",
       bullets: [
         {
           label: "Up to 70% Cost Savings",
@@ -182,7 +182,7 @@ export const debtCollectionData = {
       heading: "Take Control of Your Debt Recovery Today",
       paragraphs: [
         {
-          text: "Premiere Resolutions is here to guide you through debt collection, bankruptcy claims filing, and preference defense—providing comprehensive solutions for complex and time-sensitive challenges.",
+          text: "premier Resolutions is here to guide you through debt collection, bankruptcy claims filing, and preference defense—providing comprehensive solutions for complex and time-sensitive challenges.",
         },
         {
           text: "**Let us help you protect your assets and recover what's rightfully yours.**",
@@ -306,7 +306,7 @@ export const emailSupportData = {
     },
     {
       type: "main",
-      heading: "Why Partner With Premiere Resolutions?",
+      heading: "Why Partner With premier Resolutions?",
       paragraphs: [
         {
           text: "**63% of businesses say generating and nurturing leads is their #1 challenge**. With our experienced email marketing team, you get the tools, tech support, and automation capabilities that 44-47% of marketers lack. We handle the complexity while you focus on closing deals.",
@@ -419,7 +419,7 @@ export const aiChatbotData = {
     },
     {
       type: "main",
-      heading: "Why Choose Premiere Resolutions for AI Chatbot Solutions?",
+      heading: "Why Choose premier Resolutions for AI Chatbot Solutions?",
       bullets: [
         {
           label: "Custom-Built Solutions",
@@ -447,7 +447,7 @@ export const aiChatbotData = {
           text: "AI chatbots reduce response times, cut support costs, and improve customer satisfaction. Our solutions are designed to complement your human team—not replace it—creating a support ecosystem that scales with your business.",
         },
         {
-          text: "**Discover the power of AI-driven customer service with Premiere Resolutions.**",
+          text: "**Discover the power of AI-driven customer service with premier Resolutions.**",
           bold: true,
         },
       ],
@@ -576,7 +576,7 @@ export const businessManagementData = {
     },
     {
       type: "main",
-      heading: "Why Partner With Premiere Resolutions?",
+      heading: "Why Partner With premier Resolutions?",
       bullets: [
         {
           label: "Cost-Effective Operations",
@@ -635,7 +635,7 @@ export const customerServicesData = {
           heading: "Significant Cost Savings",
           paragraphs: [
             {
-              text: "By partnering with Premiere Resolutions, companies achieve savings of **40-60% compared to maintaining in-house operations**. This allows you to allocate resources more efficiently and invest in other critical business areas.",
+              text: "By partnering with premier Resolutions, companies achieve savings of **40-60% compared to maintaining in-house operations**. This allows you to allocate resources more efficiently and invest in other critical business areas.",
             },
           ],
         },
@@ -779,7 +779,7 @@ export const customerServicesData = {
     },
     {
       type: "main",
-      heading: "Get Started With Premiere Resolutions",
+      heading: "Get Started With premier Resolutions",
       paragraphs: [
         {
           text: "Transform your customer service operations with a dedicated team that cares about your success as much as you do. Our hybrid models combine in-house expertise with outsourced efficiency for the best of both worlds.",
@@ -948,7 +948,7 @@ export const liveChatSupportData = {
           text: "Live chat is the fastest-growing customer service channel for good reason. Let us help you meet customers where they are and provide the instant, personalized support they expect and deserve.",
         },
         {
-          text: "**Start your live chat journey with Premiere Resolutions today.**",
+          text: "**Start your live chat journey with premier Resolutions today.**",
           bold: true,
         },
       ],
@@ -1085,7 +1085,7 @@ export const salesServicesData = {
     },
     {
       type: "main",
-      heading: "Why Choose Premiere Resolutions for Sales Services?",
+      heading: "Why Choose premier Resolutions for Sales Services?",
       bullets: [
         {
           label: "43% Higher Conversion Rates",
@@ -1113,7 +1113,7 @@ export const salesServicesData = {
           text: "Sales professionals already spend 21% of their time prospecting, leaving less time for closing deals. Let our expert team handle lead generation and appointment setting while your closers focus on what they do best.",
         },
         {
-          text: "**Partner with Premiere Resolutions to supercharge your sales pipeline today.**",
+          text: "**Partner with premier Resolutions to supercharge your sales pipeline today.**",
           bold: true,
         },
       ],
@@ -1758,7 +1758,7 @@ export const salesServicesFAQData = {
 export const defaultCTAData = {
   heading: "Ready to Transform Your Business?",
   description:
-    "Partner with Premiere Resolutions for professional, scalable solutions that drive results. Our expert team is ready to help you achieve your goals.",
+    "Partner with premier Resolutions for professional, scalable solutions that drive results. Our expert team is ready to help you achieve your goals.",
   ctaText: "Get Your Free Consultation Today",
   buttonText: "Contact Us",
   buttonLink: "/contact",

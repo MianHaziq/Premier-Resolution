@@ -68,7 +68,7 @@ const realStories = [
     id: 1,
     youtubeId: "GNZBSZD16cY",
     quote:
-      "Working with Premiere Resolutions has transformed our customer engagement. Their team is highly responsive and always professional.",
+      "Working with Premier Resolutions has transformed our customer engagement. Their team is highly responsive and always professional.",
     author: "Emily Jack",
   },
   {

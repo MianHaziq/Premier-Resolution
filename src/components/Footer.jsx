@@ -50,7 +50,7 @@ export default function Footer() {
           
 
             <h3 className="text-[18px] md:text-[20px] font-semibold text-white mb-3">
-              Premiere Resolutions
+              Premier Resolutions
             </h3>
 
             <p className="text-[13px] md:text-[14px] text-[#9CA3AF] leading-relaxed mb-6">
@@ -185,22 +185,22 @@ export default function Footer() {
       </div>
 
       {/* Brand Logos Section */}
-      <div className="border-t border-[#333] py-8 md:py-10">
+      <div className="border-t border-[#333] py-4 md:py-6">
         <div className="max-w-[1440px] 2xl:max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20 2xl:px-24">
           <div className="flex items-center justify-center gap-8 md:gap-12 lg:gap-16 flex-wrap">
-            <img src="/l1.png" alt="Partner" className="h-12 md:h-14 lg:h-16 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
-            <img src="/l2.png" alt="Partner" className="h-12 md:h-14 lg:h-16 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
-            <img src="/l3.png" alt="Partner" className="h-12 md:h-14 lg:h-16 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
-            <img src="/l4.png" alt="Partner" className="h-12 md:h-14 lg:h-16 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <img src="/l1.png" alt="Partner" className="h-16 md:h-18 lg:h-20 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <img src="/l2.png" alt="Partner" className="h-16 md:h-18 lg:h-20 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <img src="/l3.png" alt="Partner" className="h-16 md:h-18 lg:h-20 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
+            <img src="/l4.png" alt="Partner" className="h-16 md:h-18 lg:h-20 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" />
           </div>
         </div>
       </div>
 
-      {/* Bottom Bar */}
+      {/* Bottom Bar */} 
       <div className="border-t border-[#0B9444]">
         <div className="max-w-[1440px] 2xl:max-w-[1600px] mx-auto px-6 md:px-12 lg:px-20 2xl:px-24 py-5">
           <p className="text-[13px] md:text-[14px] text-[#9CA3AF] text-center">
-            Copyright 2025 Premiere resolutions. All Right Reserved
+            Copyright 2025 Premier resolutions. All Right Reserved
           </p>
         </div>
       </div>
