@@ -47,7 +47,7 @@ const SERVICES = [
     link: "/services/live-chat-support",
   },
   {
-    icon: "/csIcon.png",
+    icon: "/ic7.png",
     title: "Sales Services",
     description:
       "Expert sales support with lead generation and appointment setting delivering 43% higher conversion rates.",

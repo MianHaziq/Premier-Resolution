@@ -107,7 +107,7 @@ export default function Hero({ preloaderComplete = false }) {
           style={{ transitionDelay: "300ms" }}
         >
           <img
-            src="/heroImage.jpg"
+            src="/im1.jpg"
             alt="Call center"
             className="w-full max-w-[572px] h-auto lg:h-[593px] object-cover rounded-[48px] hover:scale-[1.02] transition-transform duration-500"
           />

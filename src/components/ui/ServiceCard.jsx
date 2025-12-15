@@ -40,12 +40,12 @@ export default function ServiceCard({ icon, title, description, link, index = 0,
       <div className="flex flex-col pt-5 pr-5 pb-6 pl-5 sm:pt-6 sm:pr-[22px] sm:pb-[26px] sm:pl-[22px] gap-[12px]">
         {/* Icon row */}
         <div className="w-full flex items-start">
-          <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg border border-[#20A871] bg-white group-hover:bg-[#0B9444] group-hover:border-[#0B9444] transition-all duration-300 group-hover:scale-110 overflow-hidden">
+          <div className="inline-flex items-center justify-center w-14 h-14 rounded-lg border border-[#20A871] bg-white group-hover:bg-[#0B9444] group-hover:border-[#0B9444] transition-all duration-300 group-hover:scale-110 overflow-hidden">
             {/* Custom icon image */}
             <img
               src={icon}
               alt=""
-              className="w-10 h-10 object-contain transition-all duration-300"
+              className="w-12 h-12 object-contain transition-all duration-300"
             />
           </div>
         </div>
