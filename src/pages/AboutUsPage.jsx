@@ -393,7 +393,7 @@ export default function AboutUsPage() {
               <img
                 src="/meet-room.jpg"
                 alt="Our Team"
-                className="w-full h-[220px] sm:h-[280px] md:h-[400px] lg:h-[450px] 2xl:h-[500px] object-cover"
+                className="w-full h-[220px] sm:h-[280px] md:h-[400px] lg:h-[450px] 2xl:h-[500px] object-cover rounded-3xl"
               />
             </div>
           </div>
