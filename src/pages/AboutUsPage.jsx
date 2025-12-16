@@ -258,7 +258,7 @@ export default function AboutUsPage() {
 
               {/* Brand Logos */}
               <div className="bg-[#1a1a1a] rounded-xl p-5 md:p-6 lg:p-8">
-                <p className="text-[11px] md:text-[12px] text-white/60 mb-4 md:mb-5 text-center">Trusted by leading companies</p>
+                <p className="text-[11px] md:text-[12px] text-white/60 mb-4 md:mb-5 text-center">Certifications</p>
                 <div className="flex items-center justify-center gap-6 md:gap-8 lg:gap-10 flex-wrap">
                   <img src="/l1.png" alt="Partner" className="h-14 md:h-16 lg:h-20 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-300" />
                   <img src="/l2.png" alt="Partner" className="h-14 md:h-16 lg:h-20 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-300" />
